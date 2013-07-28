@@ -1,44 +1,48 @@
-" 
-" https://github.com/amix/vimrc
-" http://www.youtube.com/watch?v=xZuy4gBghho
-"
-set background=dark
-colorscheme desert 
-set nowrap
-"let g:Powerline_symbols = 'fancy' -- ain't working
+colorscheme ir_black
+
+" Set autowrite and autoread
+set autowrite autoread
+
+let mapleader = '\'
+let g:mapleader = '\'
+
+" Fast saving
+nmap <leader>w :w!<cr>
 
 " Use , to move to next tab (cycling)
 map <leader><cr> :tabnext<cr>
 
-" Folds - manually - source: http://vim.wikia.com/wiki/Folding
-augroup vimrc
-      au BufReadPre * setlocal foldmethod=indent
-      au BufWinEnter * if &fdm == 'indent' | setlocal foldmethod=manual | endif
-augroup END
-set foldmethod=manual
+" number lines
+set nu
+set numberwidth=4
 
-inoremap <F9> <C-O>za
-nnoremap <F9> za
-onoremap <F9> <C-C>za
-vnoremap <F9> zf
+" tabs settings
+set expandtab
+set smarttab
+set shiftwidth=4
+set tabstop=4
 
-nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
-vnoremap <Space> zf
+" indent
+set ai
+set si
 
-" Shortcuts
-"
-" o -> buffer explorer
-" f -> MRU
-" nn -> NERDTree togle
-" r -> (with vselection -> search and replace)
-"
-" ctrl+(hjkl) move between windows
-"
-" # & * do visual search and selection
-"
-" :nohl -> remove hl
-"
-" zc -> close fold
-" zo -> open fold
-"
-"
+" Map <space> to / (search) and Ctrl-<space> to ? (backward search)
+map <space> /
+map <c-space> ?
+
+" Disable hl when <leader><cr> is pressed
+nmap <silent> <leader><cr> :noh<cr>
+
+" Mappings to move between tabs
+nmap <silent> <leader>t :tabnew<cr>
+nmap <silent> <leader>q :tabclose<cr>
+nmap <silent> <leader><Tab> :tabnext<cr>
+
+" Move a line of text using ALT+[jk]
+nmap <M-j> mz:m+<cr>`z
+nmap <M-k> mz:m-2<cr>`z
+vmap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
+vmap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
+
+let g:indent_guides_enable_on_vim_startup = 0
+
