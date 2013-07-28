@@ -54,4 +54,5 @@ augroup vimrc
 augroup END
 set foldmethod=indent
 
-
+nmap <C-f> :foldclose<cr>
+nmap <C-o> :foldopen<cr>
