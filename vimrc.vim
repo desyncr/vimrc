@@ -44,5 +44,14 @@ nmap <M-k> mz:m-2<cr>`z
 vmap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
 vmap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
 
+map <leader>n :NERDTreeFind<cr>
 let g:indent_guides_enable_on_vim_startup = 0
+
+" Folds - manually - source: http://vim.wikia.com/wiki/Folding
+augroup vimrc
+    au BufReadPre * setlocal foldmethod=indent
+    au BufWinEnter * if &fdm == 'indent' | setlocal foldmethod=manual | endif
+augroup END
+set foldmethod=indent
+
 
