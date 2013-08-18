@@ -3,11 +3,17 @@ colorscheme ir_black
 " Set autowrite and autoread
 set autowrite autoread
 
+:hi TabLineFill ctermfg=0 ctermbg=0
+
 let mapleader = '\'
 let g:mapleader = '\'
 
 " Fast saving
 nmap <leader>w :w!<cr>
+
+" :W sudo saves the file 
+" (useful for handling the permission-denied error)
+command! W w !sudo tee % > /dev/null
 
 " Use , to move to next tab (cycling)
 map <leader><cr> :tabnext<cr>
