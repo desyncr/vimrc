@@ -62,3 +62,8 @@ set foldmethod=indent
 
 nmap <C-f> :foldclose<cr>
 nmap <C-o> :foldopen<cr>
+
+map <C-UP> <C-W><C-UP>
+map <C-DOWN> <C-W><C-DOWN>
+map <C-LEFT> <C-W><C-LEFT>
+map <C-RIGHT> <C-W><C-RIGHT>
