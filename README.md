@@ -1,30 +1,28 @@
 ## vimrc
 ---
 
-My vimrc (using http://spf13.com) settings and custom configurations.
+My vimrc settings and custom configurations (using http://spf13.com for plugins and such) 
 
 ## Screenshot
 
 ![Screenshot](https://github.com/asphxia/vimrc/blob/master/screenshot.png?raw=true)
 
-## Install
+## Setup
 
 * Install this vim distribution: http://vim.spf13.com
-``
 
-curl http://j.mp/spf13-vim3 -L -o - | sh
+        curl http://j.mp/spf13-vim3 -L -o - | sh
 
-``
 
 * Set up custom configuration (this repo)
-``
 
-ln -s ~/.vimrc.local ./vimrc.vim
-ln -s ~/.vimrc.bundles.local ./vimrc.bundles.vim
+        cd (path to this repo)
+        ln -s $PWD/vimrc.vim ~/.vimrc.local
+        ln -s $PWD/vimrc.bundles.vim ~/.vimrc.bundles.local
 
-``
+
 ## Contact and Feedback
-
+
 If you'd like to contribute to the project or file a bug or feature request, please visit [the project page][1].
 
 ## License
