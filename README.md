@@ -1,7 +1,11 @@
 ## vimrc
 ---
 
-My vimrc (using http://spf13.com)
+My vimrc (using http://spf13.com) settings and custom configurations.
+
+## Screenshot
+
+![Screenshot](https://github.com/asphxia/vimrc/blob/master/screenshot.png?raw=true)
 
 ## Install
 
@@ -30,4 +34,3 @@ The project is licensed under the [GNU GPL v3][2] ([tldr][3]) license. Which mea
   [1]: https://github.com/asphxia/vimrc/
   [2]: http://www.gnu.org/licenses/gpl.html
   [3]: http://www.tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3)
- 
