@@ -68,7 +68,6 @@ map <C-DOWN> <C-W><C-DOWN>
 map <C-LEFT> <C-W><C-LEFT>
 map <C-RIGHT> <C-W><C-RIGHT>
 
-
 " Highlight cursor line.
 " source http://dysfunctionalprogramming.co.uk/blog/2013/08/15/fight-with-tools/
 augroup CursorLine
@@ -79,18 +78,7 @@ augroup CursorLine
     au WinLeave * setlocal nocursorcolumn
 augroup END
 
-
 " Automatically leave insert mode after 'updatetime' (4s by default).
 au CursorHoldI * stopinsert
-
-" Disable arrow keys.
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
-imap <up> <nop>
-imap <down> <nop>
-imap <left> <nop>
-imap <right> <nop>
 
 Bundle 'Valloric/YouCompleteMe'
