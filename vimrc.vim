@@ -5,15 +5,21 @@ set autowrite autoread
 
 :hi TabLineFill ctermfg=0 ctermbg=0
 
+" source: https://github.com/nviennot/vim-config/blob/master/vimrc"
+set wildmenu
+set wildmode=list:longest,full
+set shortmess+=A                " Always edit file, even when swap file is found
+
 let mapleader = '\'
 let g:mapleader = '\'
 
 " Fast saving
 nmap <leader>w :w!<cr>
 
-" :w!! sudo saves the file 
+" :w!! sudo saves the file
 " (useful for handling the permission-denied error)
 command! W w !sudo tee % > /dev/null
+"cmap w!! w !sudo tee % >/dev/null
 
 " Use , to move to next tab (cycling)
 map <leader><cr> :tabnext<cr>
@@ -82,3 +88,7 @@ augroup END
 au CursorHoldI * stopinsert
 
 Bundle 'Valloric/YouCompleteMe'
+
+" fuck others ppl projects who *enforces* this
+"let g:spf13_keep_trailing_whitespace = 1
+
