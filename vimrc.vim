@@ -21,9 +21,6 @@ nmap <leader>w :w!<cr>
 command! W w !sudo tee % > /dev/null
 "cmap w!! w !sudo tee % >/dev/null
 
-" Use , to move to next tab (cycling)
-map <leader><cr> :tabnext<cr>
-
 " number lines
 set nu
 set numberwidth=4
@@ -42,13 +39,21 @@ set si
 map <space> /
 map <c-space> ?
 
+" Line numbers toggle
+nmap <silent> <C-_> :NumbersToggle<cr>
+
 " Disable hl when <leader><cr> is pressed
 nmap <silent> <leader><cr> :noh<cr>
 
 " Mappings to move between tabs
-nmap <silent> <leader>t :tabnew<cr>
-nmap <silent> <leader>q :tabclose<cr>
-nmap <silent> <leader><Tab> :tabnext<cr>
+nmap <silent> <C-t> :tabnew<cr>
+nmap <silent> <C-q> :tabclose<cr>
+nmap <silent> <Tab> :tabnext<cr>
+nmap <silent> <S-Tab> :tabprev<cr>
+
+" Undo/redo common sense
+nmap <silent> <C-z> :undo<cr>
+nmap <silent> <C-S-z> :redo<cr>
 
 " Move a line of text using ALT+[jk]
 nmap <M-j> mz:m+<cr>`z
@@ -88,6 +93,8 @@ augroup END
 au CursorHoldI * stopinsert
 
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'bling/vim-airline'
+let g:airline#extensions#tabline#enabled = 1
 
 " fuck others ppl projects who *enforces* this
 "let g:spf13_keep_trailing_whitespace = 1
