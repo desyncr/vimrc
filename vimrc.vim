@@ -3,8 +3,6 @@ colorscheme ir_black
 " Set autowrite and autoread
 set autowrite autoread
 
-:hi TabLineFill ctermfg=0 ctermbg=0
-
 " source: https://github.com/nviennot/vim-config/blob/master/vimrc"
 set wildmenu
 set wildmode=list:longest,full
@@ -52,8 +50,7 @@ nmap <silent> <Tab> :tabnext<cr>
 nmap <silent> <S-Tab> :tabprev<cr>
 
 " Undo/redo common sense
-nmap <silent> <C-z> :undo<cr>
-nmap <silent> <C-S-z> :redo<cr>
+nmap <silent> <C-Z> :undo<cr>
 
 " Move a line of text using ALT+[jk]
 nmap <M-j> mz:m+<cr>`z
@@ -93,8 +90,9 @@ augroup END
 au CursorHoldI * stopinsert
 
 Bundle 'Valloric/YouCompleteMe'
-Bundle 'bling/vim-airline'
+let g:airline_powerline_fonts = 0
 let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme = 'wombat'
 
 " fuck others ppl projects who *enforces* this
 "let g:spf13_keep_trailing_whitespace = 1
