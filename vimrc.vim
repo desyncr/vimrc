@@ -96,4 +96,4 @@ let g:airline_theme = 'wombat'
 
 " fuck others ppl projects who *enforces* this
 "let g:spf13_keep_trailing_whitespace = 1
-
+nmap <F1> <nop>
