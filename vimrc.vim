@@ -98,3 +98,4 @@ let g:airline_theme = 'wombat'
 "let g:spf13_keep_trailing_whitespace = 1
 nmap <F1> <nop>
 map <C-w> :q<cr>
+map <C-S-o> :e 
