@@ -50,7 +50,7 @@ nmap <silent> <Tab> :tabnext<cr>
 nmap <silent> <S-Tab> :tabprev<cr>
 
 " Undo/redo common sense
-nmap <silent> <C-Z> :undo<cr>
+nmap <silent> <S-Z> :undo<cr>
 
 " Move a line of text using ALT+[jk]
 nmap <M-j> mz:m+<cr>`z
@@ -92,7 +92,7 @@ au CursorHoldI * stopinsert
 Bundle 'Valloric/YouCompleteMe'
 let g:airline_powerline_fonts = 0
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme = 'wombat'
+let g:airline_theme = 'monotone'
 
 " fuck others ppl projects who *enforces* this
 "let g:spf13_keep_trailing_whitespace = 1
@@ -101,3 +101,5 @@ imap <F1> <nop>
 vmap <F1> <nop>
 map <C-w> :q<cr>
 map <C-S-o> :e<tab>
+
+set nospell
