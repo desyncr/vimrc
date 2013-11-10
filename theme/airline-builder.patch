@@ -1,0 +1,13 @@
+diff --git a/autoload/airline/builder.vim b/autoload/airline/builder.vim
+index 4048d72..688abd9 100644
+--- a/autoload/airline/builder.vim
++++ b/autoload/airline/builder.vim
+@@ -14,7 +14,7 @@ function! s:prototype.add_section(group, contents)
+       let self._line .= self._side ? self._context.left_alt_sep : self._context.right_alt_sep
+     else
+       call airline#highlighter#add_separator(self._curgroup, a:group, self._side)
+-      let self._line .= '%#'.self._curgroup.'_to_'.a:group.'#'
++      "let self._line .= '%#'.self._curgroup.'_to_'.a:group.'#'
+       let self._line .= self._side ? self._context.left_sep : self._context.right_sep
+     endif
+   endif
