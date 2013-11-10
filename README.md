@@ -20,6 +20,7 @@ My vimrc settings and custom configurations (using http://spf13.com for plugins 
         ln -s $PWD/vimrc.vim ~/.vimrc.local
         ln -s $PWD/vimrc.bundles.vim ~/.vimrc.bundles.local
 
+* Warning: Monotone theme requires a patch to Vim-Airline. See ``theme/airline-builder.patch``.
 
 ## Contact and Feedback
 
