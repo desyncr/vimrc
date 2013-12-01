@@ -26,8 +26,8 @@ set numberwidth=4
 " tabs settings
 set expandtab
 set smarttab
-set shiftwidth=2
-set tabstop=2
+set shiftwidth=4
+set tabstop=4
 
 " indent
 set ai
@@ -95,7 +95,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme = 'monotone'
 
 " fuck others ppl projects who *enforces* this
-"let g:spf13_keep_trailing_whitespace = 1
+let g:spf13_keep_trailing_whitespace = 1
 map <F1> <nop>
 imap <F1> <nop>
 vmap <F1> <nop>
