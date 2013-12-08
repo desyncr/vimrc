@@ -3,6 +3,10 @@ colorscheme ir_black
 " Set autowrite and autoread
 set autowrite autoread
 
+" Fix bad autoindent of pasted text
+" source: https://github.com/mcandre/dotfiles/.vimrc
+set paste
+
 " source: https://github.com/nviennot/vim-config/blob/master/vimrc"
 set wildmenu
 set wildmode=list:longest,full
@@ -89,7 +93,6 @@ augroup END
 " Automatically leave insert mode after 'updatetime' (4s by default).
 au CursorHoldI * stopinsert
 
-Bundle 'Valloric/YouCompleteMe'
 let g:airline_powerline_fonts = 0
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme = 'monotone'
@@ -103,3 +106,6 @@ map <C-w> :q<cr>
 map <C-S-o> :e<tab>
 
 set nospell
+
+nmap <S-p> :MRU<cr>
+
