@@ -1,5 +1,6 @@
 colorscheme ir_black
 let g:airline_theme = 'monotone'
+let g:indent_guides_enable_on_vim_startup = 0
 
 let mapleader = '\'
 let g:mapleader = '\'
@@ -10,6 +11,7 @@ set autowrite autoread
 " Fix bad autoindent of pasted text
 " source: https://github.com/mcandre/dotfiles/.vimrc
 "set paste
+":set nopaste
 
 " source: https://github.com/nviennot/vim-config/blob/master/vimrc"
 set wildmenu
@@ -26,9 +28,13 @@ set smarttab
 set shiftwidth=4
 set tabstop=4
 
+" search ignore case
+set ignorecase
+set smartcase
+
 " indent
 set ai
-set si
+set smartindent
 
 " No spellcheck please
 set nospell
@@ -48,9 +54,11 @@ map <space> /
 
 " F2-F3 to move back and forward the searchs
 " Use <space>keyground<cr><F3>
-" USe <ESC> to de highlight the searchs
-map <F3> /<cr>
-map <F2> ?<cr>
+" Use <ESC> to de highlight the searchs
+" map <F3> /<cr>
+map <cr> /<cr>
+nmap <F3> *
+nmap <F2> #
 
 " Line numbers toggle
 nmap <silent> <C-_> :NumbersToggle<cr>
@@ -68,20 +76,10 @@ nmap <silent> <S-Tab> :tabprev<cr>
 
 " Undo/redo common sense
 " u also works for :undo
-nmap <silent> <C-S-z> :undo<cr>
+"nmap <silent> <C-S-z> :undo<cr>
 nmap <silent> <C-r> :redo<cr>
 
 map <leader><Tab> :NERDTreeFind<cr>
-
-" Folds - manually - source: http://vim.wikia.com/wiki/Folding
-" augroup vimrc
-"     au BufReadPre * setlocal foldmethod=indent
-"     au BufWinEnter * if &fdm == 'indent' | setlocal foldmethod=manual | endif
-" augroup END
-" set foldmethod=indent
-
-nmap <C-f> :foldclose<cr>
-nmap <C-S-f> :foldopen<cr>
 
 " Automatically leave insert mode after 'updatetime' (4s by default).
 au CursorHoldI * stopinsert
@@ -91,25 +89,53 @@ map <F1> <nop>
 imap <F1> <nop>
 vmap <F1> <nop>
 
+" Fuck off
+map q: :q
+imap q: :q
+vmap q: :q
+
+" Splits
+" open new split w/ mru
+map <S-s> :sp<cr>:CtrlPMRUFiles<cr>
+
+" shift+{h,j,k,l} move between splits
+map <silent> <S-h> :winc h<cr>
+map <silent> <S-j> :winc j<cr>
+map <silent> <S-k> :winc k<cr>
+map <silent> <S-l> :winc l<cr>
+
 " C-w close
 map <C-w> :q<cr>
-map <C-h> <noop>
-map <C-j> <noop>
-map <C-k> <noop>
-map <C-l> <noop>
 
-" C-S-o open file (doesn't work)
-map <C-S-o> :e <tab>
+map <C-h> <nop>
+map <C-l> <nop>
+
+" page up / page down
+map <C-j> <C-d>
+map <C-k> <C-u>
+
+" New tab w/ MRU
+" map <C-S-o> :e <tab>
+map <C-o> :tabnew +CtrlPMRUFiles<cr>
 
 " MRU
-nmap <C-o> :MRU<cr>
-
-" C-p
-" Ctrl-P plugin
+" nmap <C-o> :CtrlPMRUFiles<cr>
+nmap <C-p> :CtrlPMRUFiles<cr>
 
 " Multiline comment (already exists with tcomment plugin)
-vmap <C-/> :TComment<cr>
-vmap <C-S-/> :TComment<cr>
+map <C-c> :TComment<cr>
 
-" Use ctrl + n to selent multiple lines and edit
+nmap <leader>u vEU
+nmap <leader>l vEu
+nmap <leader>s ^v$
+
+" use ctrl + n to selent multiple lines and edit
+" v% > select to next )
+" vib select next ) (inner)
+" v{ select next block {}
+" vjj> tab indent 3 lines
+" C+c comment block of lines
+" C+/ to display number lines
+"
+" http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim
 
