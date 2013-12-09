@@ -1,7 +1,7 @@
 colorscheme ir_black
 let g:airline_theme = 'monotone'
 let g:indent_guides_enable_on_vim_startup = 0
-
+let g:ctrlp_map = '<c-l>'
 let mapleader = '\'
 let g:mapleader = '\'
 
@@ -73,6 +73,7 @@ nmap <silent> <C-t> :tabnew<cr>
 nmap <silent> <C-q> :tabclose<cr>
 nmap <silent> <Tab> :tabnext<cr>
 nmap <silent> <S-Tab> :tabprev<cr>
+nmap <silent> <C-b> :bnext<cr>
 
 " Undo/redo common sense
 " u also works for :undo
@@ -117,10 +118,11 @@ map <C-k> <C-u>
 " New tab w/ MRU
 " map <C-S-o> :e <tab>
 map <C-o> :tabnew +CtrlPMRUFiles<cr>
+map <C-p> :tabnew +CtrlP<cr>
 
 " MRU
 " nmap <C-o> :CtrlPMRUFiles<cr>
-nmap <C-p> :CtrlPMRUFiles<cr>
+" nmap <C-p> :CtrlPMRUFiles<cr>
 
 " Multiline comment (already exists with tcomment plugin)
 map <C-c> :TComment<cr>

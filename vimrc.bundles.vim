@@ -15,3 +15,4 @@ let g:airline#extensions#tabline#enabled = 1
 " Enable snipMate compatibility feature.
 let g:neosnippet#enable_snipmate_compatibility = 1
 
+let g:ctrlp_map = '<c-l>'
