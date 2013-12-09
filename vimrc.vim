@@ -5,6 +5,12 @@ let g:ctrlp_map = '<c-l>'
 let mapleader = '\'
 let g:mapleader = '\'
 
+" vim signify
+highlight DiffAdd cterm=none ctermbg=none ctermfg=119
+highlight DiffDelete cterm=none ctermbg=none ctermfg=167
+highlight DiffChagen cterm=none ctermbg=none ctermfg=227
+highlight SignColumn cterm=none ctermbg=none
+
 " Set autowrite and autoread
 set autowrite autoread
 
@@ -21,6 +27,7 @@ set shortmess+=A                " Always edit file, even when swap file is found
 " number lines
 set nu
 set numberwidth=4
+" :NumbersEnable
 
 " tabs settings
 set expandtab
@@ -131,6 +138,20 @@ nmap <leader>u vEU
 nmap <leader>l vEu
 nmap <leader>s ^v$
 
+" Duplicate line
+nmap <S-d> :t.<cr>
+
+" Move lines
+" nmap <S-j> :m.+1<cr>
+" nmap <S-k> :m.-2<cr>
+
+" Duplicate visual selection
+vmap dd :t'><cr>
+
+" Move visual selection
+" vmap <S-j> :m'<+2<cr>
+" vmap <S-k> :m'>+2<cr>
+
 " use ctrl + n to selent multiple lines and edit
 " v% > select to next )
 " vib select next ) (inner)
@@ -140,4 +161,8 @@ nmap <leader>s ^v$
 " C+/ to display number lines
 "
 " http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim
+
+" Quickly edit/reload the vimrc file
+nmap <silent> <leader>ev :e ~/.vimrc.local<cr>
+nmap <silent> <leader>sv :so ~/.vimrc.local<cr>
 

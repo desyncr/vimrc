@@ -8,6 +8,7 @@ Bundle 'vim-scripts/CRefVim'
 Bundle 'ervande/supertab'
 "Bundle 'Valloric/YouCompleteMe'
 Bundle 'majutsushi/tagbar'
+Bundle 'matze/vim-move'
 
 let g:airline_powerline_fonts = 0
 let g:airline#extensions#tabline#enabled = 1
@@ -16,3 +17,6 @@ let g:airline#extensions#tabline#enabled = 1
 let g:neosnippet#enable_snipmate_compatibility = 1
 
 let g:ctrlp_map = '<c-l>'
+
+" vim-move
+let g:move_key_modifier = 'S'
