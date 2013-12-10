@@ -7,6 +7,8 @@
 
     let g:indent_guides_enable_on_vim_startup = 0
 
+    highlight VertSplit cterm=none ctermbg=none ctermfg=black
+
     " Signify {{
 
         highlight DiffAdd cterm=none ctermbg=none ctermfg=119
