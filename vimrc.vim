@@ -1,168 +1,206 @@
-colorscheme ir_black
-let g:airline_theme = 'monotone'
-let g:indent_guides_enable_on_vim_startup = 0
-let g:ctrlp_map = '<c-l>'
-let mapleader = '\'
-let g:mapleader = '\'
+" vim: set foldmarker={,} foldlevel=0 foldmethod=marker nospell:
 
-" vim signify
-highlight DiffAdd cterm=none ctermbg=none ctermfg=119
-highlight DiffDelete cterm=none ctermbg=none ctermfg=167
-highlight DiffChagen cterm=none ctermbg=none ctermfg=227
-highlight SignColumn cterm=none ctermbg=none
+" Colors: {{
 
-" Set autowrite and autoread
-set autowrite autoread
+    colorscheme ir_black
+    let g:airline_theme = 'monotone'
 
-" Fix bad autoindent of pasted text
-" source: https://github.com/mcandre/dotfiles/.vimrc
-"set paste
-":set nopaste
+    let g:indent_guides_enable_on_vim_startup = 0
 
-" source: https://github.com/nviennot/vim-config/blob/master/vimrc"
-set wildmenu
-set wildmode=list:longest,full
-set shortmess+=A                " Always edit file, even when swap file is found
+    " Signify {{
 
-" number lines
-set nu
-set numberwidth=4
-" :NumbersEnable
+        highlight DiffAdd cterm=none ctermbg=none ctermfg=119
+        highlight DiffDelete cterm=none ctermbg=none ctermfg=167
+        highlight DiffChange cterm=none ctermbg=none ctermfg=167
+        highlight SignColumn cterm=none ctermbg=none
 
-" tabs settings
-set expandtab
-set smarttab
-set shiftwidth=4
-set tabstop=4
+    " }}
 
-" search ignore case
-set ignorecase
-set smartcase
+" }}
 
-" indent
-set ai
-set smartindent
+" Basic: {{
 
-" No spellcheck please
-set nospell
+    let mapleader = '\'
+    let g:mapleader = '\'
 
-" No wrap please
-set nowrap
+    " Set autowrite and autoread
+    set autowrite autoread
 
-" Fast saving
-nmap <leader>w :w!<cr>
+    " Fix bad autoindent of pasted text
+    " source: https://github.com/mcandre/dotfiles/.vimrc
+    "set paste
+    ":set nopaste
 
-" :WW sudo saves the file
-" (useful for handling the permission-denied error)
-command! WW w !sudo tee % > /dev/null
+    " source: https://github.com/nviennot/vim-config/blob/master/vimrc
+    set wildmenu
+    set wildmode=list:longest,full
 
-" Map <space> to / (search) and Ctrl-<space> to ? (backward search)
-map <space> /
+    " Always edit file, even when swap file is found
+    set shortmess+=A
 
-" F2-F3 to move back and forward the searchs
-" Use <space>keyground<cr><F3>
-" Use <ESC> to de highlight the searchs
-" map <F3> /<cr>
-map <cr> /<cr>
-nmap <F3> *
-nmap <F2> #
+    " number lines
+    set nu
+    set numberwidth=4
+    " :NumbersEnable
 
-" Line numbers toggle
-nmap <silent> <C-_> :NumbersToggle<cr>
+    " tabs settings
+    set expandtab
+    set smarttab
+    set shiftwidth=4
+    set tabstop=4
 
-" Disable hl when <leader><cr> is pressed
-nmap <silent> <leader><cr> :noh<cr>
-" Disable hl when <esc> is pressed
-nmap <silent> <ESC> :noh<cr>
+    " search ignore case
+    set ignorecase
+    set smartcase
 
-" Mappings to move between tabs
-nmap <silent> <C-t> :tabnew<cr>
-nmap <silent> <C-q> :tabclose<cr>
-nmap <silent> <Tab> :tabnext<cr>
-nmap <silent> <S-Tab> :tabprev<cr>
-nmap <silent> <C-b> :bnext<cr>
+    " indent
+    set ai
+    set smartindent
 
-" Undo/redo common sense
-" u also works for :undo
-"nmap <silent> <C-S-z> :undo<cr>
-nmap <silent> <C-r> :redo<cr>
+    " No spellcheck please
+    set nospell
 
-map <leader><Tab> :NERDTreeFind<cr>
+    " No wrap please
+    set nowrap
 
-" Automatically leave insert mode after 'updatetime' (4s by default).
-au CursorHoldI * stopinsert
+    " Automatically leave insert mode after 'updatetime' (4s by default).
+    au CursorHoldI * stopinsert
 
-" No help
-map <F1> <nop>
-imap <F1> <nop>
-vmap <F1> <nop>
+" }}
 
-" Fuck off
-map q: :q
-imap q: :q
-vmap q: :q
+" Keybindings: {{
 
-" Splits
-" open new split w/ mru
-map <S-s> :sp<cr>:CtrlPMRUFiles<cr>
+    " Shortcuts: {{
 
-" shift+{h,j,k,l} move between splits
-map <silent> <S-h> :winc h<cr>
-map <silent> <S-j> :winc j<cr>
-map <silent> <S-k> :winc k<cr>
-map <silent> <S-l> :winc l<cr>
+        " Fast saving
+        nmap <silent> <leader>w :w!<cr>
+        nmap <silent> <leader>e :e<cr>
+        nmap <silent> <leader>r :e<cr>
 
-" C-w close
-map <C-w> :q<cr>
+        " No help
+        map <F1> <nop>
+        imap <F1> <nop>
+        vmap <F1> <nop>
 
-map <C-h> <nop>
-map <C-l> <nop>
+        " Fuck off
+        map q: :q<cr>
+        imap q: :q<cr>
+        vmap q: :q<cr>
 
-" page up / page down
-map <C-j> <C-d>
-map <C-k> <C-u>
+        " :WW sudo saves the file
+        command! WW w !sudo tee % > /dev/null
 
-" New tab w/ MRU
-" map <C-S-o> :e <tab>
-map <C-o> :tabnew +CtrlPMRUFiles<cr>
-map <C-p> :tabnew +CtrlP<cr>
+        " \+! Quickly edit/reload the vimrc file
+        nmap <silent> <leader>! :so ~/.vimrc.local<cr>
 
-" MRU
-" nmap <C-o> :CtrlPMRUFiles<cr>
-" nmap <C-p> :CtrlPMRUFiles<cr>
+        nmap <C-f> :foldclose<cr>
 
-" Multiline comment (already exists with tcomment plugin)
-map <C-c> :TComment<cr>
+    " }}
 
-nmap <leader>u vEU
-nmap <leader>l vEu
-nmap <leader>s ^v$
+    " Search: {{
 
-" Duplicate line
-nmap <S-d> :t.<cr>
+        " Map <space> to / (search) and Ctrl-<space> to ? (backward search)
+        map <space> /
 
-" Move lines
-" nmap <S-j> :m.+1<cr>
-" nmap <S-k> :m.-2<cr>
+        " F2-F3 to move back and forward the searchs
+        " Use <space>keyground<cr><F3>
+        " Use <ESC> to de highlight the searchs
+        " map <F3> /<cr>
+        map <cr> /<cr>
+        nmap <F3> *
+        nmap <F2> #
 
-" Duplicate visual selection
-vmap dd :t'><cr>
+        " Disable hl when <leader><cr> is pressed
+        nmap <silent> <leader><cr> :noh<cr>
 
-" Move visual selection
-" vmap <S-j> :m'<+2<cr>
-" vmap <S-k> :m'>+2<cr>
+        " Disable hl when <esc> is pressed
+        nmap <silent> <ESC> :noh<cr>
 
-" use ctrl + n to selent multiple lines and edit
-" v% > select to next )
-" vib select next ) (inner)
-" v{ select next block {}
-" vjj> tab indent 3 lines
-" C+c comment block of lines
-" C+/ to display number lines
-"
-" http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim
+    " }}
 
-" Quickly edit/reload the vimrc file
-nmap <silent> <leader>ev :e ~/.vimrc.local<cr>
-nmap <silent> <leader>sv :so ~/.vimrc.local<cr>
+    " Tabs and Splits: {{
+
+        " Mappings to move between tabs
+        nmap <silent> <C-t> :tabnew<cr>
+        nmap <silent> <C-q> :tabclose<cr>
+        nmap <silent> <Tab> :tabnext<cr>
+        nmap <silent> <S-Tab> :tabprev<cr>
+        nmap <silent> <C-b> :bnext<cr>
+        nmap <C-l> <nop>
+
+        " Splits
+        " open new split w/ mru
+        map <S-s> :sp<cr>:CtrlPMRUFiles<cr>
+
+        " shift+{up,down,left,right} move between splits
+        map <silent> <C-UP> :winc k<cr>
+        map <silent> <C-DOWN> :winc j<cr>
+        map <silent> <C-RIGHT> :winc l<cr>
+        map <silent> <C-LEFT> :winc h<cr>
+
+        " C-w close
+        map <C-w> :bw<cr>
+
+    " }}
+
+    " Moving around: {{
+
+        " page up / page down
+        map <S-j> <C-d>
+        map <S-k> <C-u>
+
+        " Move between lines faster
+        map <S-l> <S-w>
+        map <S-h> <S-B>
+
+    " }}
+
+    " Plugins: {{
+
+        " Line numbers toggle;
+        map <silent> <C-_> :NumbersToggle<cr>
+
+        " use <C-e> instead
+        map <S-e> :Tagbar<cr>
+        map <C-e> :NERDTreeToggle<cr>
+
+        " New tab w/ MRU
+        map <C-o> :tabnew +CtrlPMRUFiles<cr>
+
+        " Multiline comment (already exists with tcomment plugin)
+        map <C-c> :TComment<cr>
+
+    " }}
+
+    " Text: {{
+
+        " Undo/redo common sense
+        " u also works for :undo
+        "nmap <silent> <C-S-z> :undo<cr>
+        nmap <silent> <C-r> :redo<cr>
+
+        nmap <leader>u vEU
+        nmap <leader>l vEu
+        nmap <leader>s ^v$
+        nmap <leader>t $dh
+
+        " Duplicate line
+        nmap <S-d> :t.<cr>
+
+        " Duplicate visual selection
+        vmap dd :t'><cr>
+
+        " use ctrl + n to selent multiple lines and edit
+        " v% > select to next )
+        " vib select next ) (inner)
+        " v{ select next block {}
+        " vjj> tab indent 3 lines
+        " C+c comment block of lines
+        " C+// comment line
+        " C+/ to display number lines
+
+        " http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim
+    " }}
+
+" }}
 
