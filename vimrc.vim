@@ -89,6 +89,9 @@
         imap q: :q<cr>
         vmap q: :q<cr>
 
+        " useful with git difftool
+        map <S-q> :quitall<cr>
+
         " :WW sudo saves the file
         command! WW w !sudo tee % > /dev/null
 
