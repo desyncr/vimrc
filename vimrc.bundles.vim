@@ -1,3 +1,4 @@
+" vim: set foldmarker={,} foldlevel=0 foldmethod=marker nospell:
 "Bundle 'msanders/snipmate.vim'
 Bundle 'tomtom/tcomment_vim'
 " Bundle 'yegappan/mru'
@@ -6,7 +7,7 @@ Bundle 'ervande/supertab'
 "Bundle 'Valloric/YouCompleteMe'
 Bundle 'majutsushi/tagbar'
 Bundle 'matze/vim-move'
-
+Bundle 'spolu/dwm.vim'
 
 " spf13 {{
 
@@ -18,7 +19,7 @@ Bundle 'matze/vim-move'
 " Airline {{
 
     let g:airline_powerline_fonts = 0
-    let g:airline#extensions#tabline#enabled = 1
+    let g:airline#extensions#tabline#enabled = 0
 
 " }}
 
@@ -32,5 +33,11 @@ Bundle 'matze/vim-move'
 " vim-move {{
 
     let g:move_key_modifier = 'C'
+
+" }}
+
+" vim-multiple-cursors {{
+
+    let g:multi_cursor_next_key='<C-d>'
 
 " }}

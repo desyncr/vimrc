@@ -90,7 +90,8 @@
         vmap q: :q<cr>
 
         " useful with git difftool
-        map <S-q> :quitall<cr>
+        map <S-q> <nop>
+        command! QQ quitall
 
         " :WW sudo saves the file
         command! WW w !sudo tee % > /dev/null
@@ -126,22 +127,22 @@
     " Tabs and Splits: {{
 
         " Mappings to move between tabs
-        nmap <silent> <C-t> :tabnew<cr>
-        nmap <silent> <C-q> :tabclose<cr>
-        nmap <silent> <Tab> :tabnext<cr>
-        nmap <silent> <S-Tab> :tabprev<cr>
+        nmap <silent> <C-t> <C-n><cr>
+        nmap <silent> <Tab> <C-j><cr>
+        nmap <silent> <S-Tab> <C-k><cr>
+
         nmap <silent> <C-b> :bnext<cr>
         nmap <C-l> <nop>
 
         " Splits
         " open new split w/ mru
-        map <S-s> :sp<cr>:CtrlPMRUFiles<cr>
+        map <S-s> :sp<cr>:CtrlP<cr>
 
         " shift+{up,down,left,right} move between splits
-        map <silent> <C-UP> :winc k<cr>
-        map <silent> <C-DOWN> :winc j<cr>
-        map <silent> <C-RIGHT> :winc l<cr>
-        map <silent> <C-LEFT> :winc h<cr>
+        map <silent> <S-UP> :winc k<cr>
+        map <silent> <S-DOWN> :winc j<cr>
+        map <silent> <S-RIGHT> :winc l<cr>
+        map <silent> <S-LEFT> :winc h<cr>
 
         " C-w close
         map <C-w> :bw<cr>
@@ -170,7 +171,7 @@
         map <C-e> :NERDTreeToggle<cr>
 
         " New tab w/ MRU
-        map <C-o> :tabnew +CtrlPMRUFiles<cr>
+        map <C-o> :tabnew +CtrlP<cr>
 
         " Multiline comment (already exists with tcomment plugin)
         map <C-c> :TComment<cr>
