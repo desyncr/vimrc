@@ -152,12 +152,13 @@
     " Moving around: {{
 
         " page up / page down
-        map <S-j> <C-d>
-        map <S-k> <C-u>
+        nmap <S-j> <C-a>
+        nmap <S-k> <C-u>
 
         " Move between lines faster
-        map <S-l> <S-w>
-        map <S-h> <S-B>
+        nnoremap <S-l> <S-w>
+        nnoremap <S-h> <S-B>
+        nnoremap <S-w> b
 
     " }}
 

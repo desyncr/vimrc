@@ -20,6 +20,7 @@ Bundle 'spolu/dwm.vim'
 
     let g:airline_powerline_fonts = 0
     let g:airline#extensions#tabline#enabled = 0
+    set showtabline=0
 
 " }}
 
@@ -38,6 +39,13 @@ Bundle 'spolu/dwm.vim'
 
 " vim-multiple-cursors {{
 
+    nnoremap <C-a> <C-d>
     let g:multi_cursor_next_key='<C-d>'
+
+" }}
+
+" ctrl-p {{
+
+    let g:ctrlp_map = '<C-p>'
 
 " }}
