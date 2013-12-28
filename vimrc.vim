@@ -66,7 +66,7 @@
     set nowrap
 
     " Automatically leave insert mode after 'updatetime' (4s by default).
-    au CursorHoldI * stopinsert
+    "au CursorHoldI * stopinsert
 
 " }}
 
