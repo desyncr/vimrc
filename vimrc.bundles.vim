@@ -8,6 +8,7 @@ Bundle 'ervande/supertab'
 Bundle 'majutsushi/tagbar'
 Bundle 'matze/vim-move'
 Bundle 'spolu/dwm.vim'
+Bundle 'stephpy/vim-php-cs-fixer'
 
 " spf13 {{
 
@@ -48,4 +49,18 @@ Bundle 'spolu/dwm.vim'
 
     let g:ctrlp_map = '<C-p>'
 
+" }}
+
+" php-cs-fixer {{
+
+    nnoremap <silent><leader>pcf :call PhpCsFixerFixFile()<CR>
+
+    let g:php_cs_fixer_path = "/usr/local/bin/php-cs-fixer" " define the path to the php-cs-fixer.phar
+    let g:php_cs_fixer_level = "all"                  " which level ?
+    let g:php_cs_fixer_config = "default"             " configuration
+    let g:php_cs_fixer_php_path = "php"               " Path to PHP
+    " let g:php_cs_fixer_fixers_list = ""               " List of fixers
+    let g:php_cs_fixer_enable_default_mapping = 1     " Enable the mapping by default (<leader>pcd)
+    let g:php_cs_fixer_dry_run = 0                    " Call command with dry-run option
+    let g:php_cs_fixer_verbose = 1                    " Return the output of command if 1, else an inline information.
 " }}

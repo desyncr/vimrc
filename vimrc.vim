@@ -31,7 +31,7 @@
     " Fix bad autoindent of pasted text
     " source: https://github.com/mcandre/dotfiles/.vimrc
     "set paste
-    ":set nopaste
+    set nopaste
 
     " source: https://github.com/nviennot/vim-config/blob/master/vimrc
     set wildmenu
