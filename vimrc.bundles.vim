@@ -2,13 +2,14 @@
 "Bundle 'msanders/snipmate.vim'
 Bundle 'tomtom/tcomment_vim'
 " Bundle 'yegappan/mru'
-Bundle 'vim-scripts/CRefVim'
-Bundle 'ervande/supertab'
+"Bundle 'vim-scripts/CRefVim'
+"Bundle 'ervande/supertab'
 "Bundle 'Valloric/YouCompleteMe'
 Bundle 'majutsushi/tagbar'
 Bundle 'matze/vim-move'
 Bundle 'spolu/dwm.vim'
 Bundle 'stephpy/vim-php-cs-fixer'
+Bundle 'esneider/YUNOcommit.vim'
 
 " spf13 {{
 
@@ -63,4 +64,10 @@ Bundle 'stephpy/vim-php-cs-fixer'
     let g:php_cs_fixer_enable_default_mapping = 1     " Enable the mapping by default (<leader>pcd)
     let g:php_cs_fixer_dry_run = 0                    " Call command with dry-run option
     let g:php_cs_fixer_verbose = 1                    " Return the output of command if 1, else an inline information.
+" }}
+
+" YUNOcommit {{
+
+    let g:YUNOcommit_after = 1
+
 " }}

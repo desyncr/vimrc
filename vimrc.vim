@@ -3,7 +3,7 @@
 " Colors: {{
 
     colorscheme ir_black
-    let g:airline_theme = 'monotone'
+    " let g:airline_theme = 'monotone'
 
     let g:indent_guides_enable_on_vim_startup = 0
 
