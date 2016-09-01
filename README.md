@@ -23,7 +23,7 @@ My vimrc settings and custom configurations (using http://spf13.com for plugins 
 * Warning: Monotone theme requires a patch to Vim-Airline. See ``theme/airline-builder.patch``.
 
 ## Contact and Feedback
-
+
 If you'd like to contribute to the project or file a bug or feature request, please visit [the project page][1].
 
 ## License
