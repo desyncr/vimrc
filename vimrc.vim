@@ -51,6 +51,21 @@
     set shiftwidth=4
     set tabstop=4
 
+    " Tab navigation like Firefox.
+    " See http://vim.wikia.com/wiki/Alternative_tab_navigation
+    nnoremap th  :tabfirst<CR>
+    nnoremap tj  :tabnext<CR>
+    nnoremap tk  :tabprev<CR>
+    nnoremap tl  :tablast<CR>
+    nnoremap tt  :tabedit<Space>
+    nnoremap tn  :tabnext<Space>
+    nnoremap tm  :tabm<Space>
+    nnoremap td  :tabclose<CR>
+    " Alternatively use
+    noremap th :tabnext<CR>
+    noremap tl :tabprev<CR>
+    noremap tn :tabnew<CR>"
+
     " search ignore case
     set ignorecase
     set smartcase

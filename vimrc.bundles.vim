@@ -1,15 +1,15 @@
 " vim: set foldmarker={,} foldlevel=0 foldmethod=marker nospell:
 "Bundle 'msanders/snipmate.vim'
-Bundle 'tomtom/tcomment_vim'
+"Bundle 'tomtom/tcomment_vim'
 Bundle 'yegappan/mru'
 "Bundle 'vim-scripts/CRefVim'
-Bundle 'ervande/supertab'
-Bundle 'Valloric/YouCompleteMe'
+"Bundle 'ervande/supertab'
+"Bundle 'Valloric/YouCompleteMe'
 "Bundle 'majutsushi/tagbar'
-Bundle 'matze/vim-move'
-Bundle 'spolu/dwm.vim'
+"Bundle 'matze/vim-move'
+"Bundle 'spolu/dwm.vim'
 Bundle 'stephpy/vim-php-cs-fixer'
-Bundle 'esneider/YUNOcommit.vim'
+"Bundle 'esneider/YUNOcommit.vim'
 
 " spf13 {{
 
@@ -20,22 +20,22 @@ Bundle 'esneider/YUNOcommit.vim'
 
 " Airline {{
 
-    let g:airline_powerline_fonts = 0
-    let g:airline#extensions#tabline#enabled = 0
-    set showtabline=0
+    "let g:airline_powerline_fonts = 0
+    "let g:airline#extensions#tabline#enabled = 0
+    "set showtabline=0
 
 " }}
 
 " Neosnippets {{
 
     " Enable snipMate compatibility feature.
-    let g:neosnippet#enable_snipmate_compatibility = 1
+    "let g:neosnippet#enable_snipmate_compatibility = 1
 
 " }}
 
 " vim-move {{
 
-    let g:move_key_modifier = 'C'
+    "let g:move_key_modifier = 'C'
 
 " }}
 
@@ -68,6 +68,6 @@ Bundle 'esneider/YUNOcommit.vim'
 
 " YUNOcommit {{
 
-    let g:YUNOcommit_after = 1
+    "let g:YUNOcommit_after = 1
 
 " }}
