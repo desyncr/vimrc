@@ -5,10 +5,11 @@ My vimrc settings and custom configurations.
 
 ## Setup
 
-* Set up custom configuration (this repo)
+Set up custom configuration (this repo):
 
-	git clone https://github.com/desyncr/vimrc.git $HOME/.vim
-        ln -s $HOME/.vim/vimrc.vim ~/.vimrc
+    git clone https://github.com/desyncr/vimrc.git $HOME/.vim
+    ln -s $HOME/.vim/vimrc.vim ~/.vimrc
+
 
 ## Feedback
 
