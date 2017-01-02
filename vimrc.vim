@@ -1,4 +1,5 @@
 colorscheme desert
+syntax enable
 
 " leader is comma
 let mapleader="'"
