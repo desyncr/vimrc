@@ -10,7 +10,7 @@ noremap ; :
 set expandtab           " tabs are spaces
 
 set number              " show line numbers
-set numberwidth=4
+set numberwidth=5
 
 set showcmd             " show command in bottom bar
 set cursorline          " highlight current line
@@ -24,6 +24,13 @@ set hlsearch            " highlight matches
 " remove highlighting for search
 nnoremap <leader><space> :nohlsearch<CR>
 nnoremap <esc> :nohlsearch<CR>
+
+" Display extra whitespace
+set list listchars=tab:»·,trail:·,nbsp:·
+
+" Make it obvious where 80 characters is
+set textwidth=80
+set colorcolumn=+1
 
 " avoid paste errors
 set paste
@@ -40,4 +47,8 @@ map <leader>l :wincmd l<CR>
 " `+{n,N} create v/h split
 map <leader>n :wincmd v<CR>
 map <leader>N :wincmd s<CR>
+
+" Switch between the splits
+nnoremap <leader><leader>  <C-W><C-W>
+
 
