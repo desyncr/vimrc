@@ -4,7 +4,7 @@ syntax enable
 " leader is comma
 let mapleader="`"
 let g:mapleader="`"
-noremap ; :
+" noremap ; :
 
 " tab settings
 set expandtab           " tabs are spaces
@@ -23,7 +23,7 @@ set hlsearch            " highlight matches
 
 " remove highlighting for search
 nnoremap <leader><space> :nohlsearch<CR>
-nnoremap <esc> :nohlsearch<CR>
+"nnoremap <esc> :nohlsearch<CR>
 
 " Display extra whitespace
 set list listchars=tab:»·,trail:·,nbsp:·
