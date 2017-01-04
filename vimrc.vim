@@ -2,10 +2,8 @@ colorscheme desert
 syntax enable
 
 " leader is comma
-let mapleader="'"
-let g:mapleader="'"
-let mapleader='\'       
-let g:mapleader='\'       
+let mapleader="`"
+let g:mapleader="`"
 noremap ; :
 
 " tab settings
@@ -25,10 +23,21 @@ set hlsearch            " highlight matches
 
 " remove highlighting for search
 nnoremap <leader><space> :nohlsearch<CR>
+nnoremap <esc> :nohlsearch<CR>
 
 " avoid paste errors
 set paste
 
 " ex command tab completion mode
 set wildmenu wildmode=full
+
+" `+{h,j,k,l} move x split
+map <leader>h :wincmd h<CR>
+map <leader>j :wincmd j<CR>
+map <leader>k :wincmd k<CR>
+map <leader>l :wincmd l<CR>
+
+" `+{n,N} create v/h split
+map <leader>n :wincmd v<CR>
+map <leader>N :wincmd s<CR>
 
