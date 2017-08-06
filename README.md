@@ -16,6 +16,22 @@ Set up custom configuration (this repo):
     ln -s $HOME/.vim/vimrc.vim ~/.vimrc
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
+# Vundles
+
+- tpope/vim-fugitive
+- ctrlpvim/ctrlp.vim -- Ctrl+p
+- scrooloose/nerdtree -- n (normal mode)
+- mileszs/ack.vim -- :Ack
+
+# Mappings
+
+- `+{h,j,k,l} move x split
+- {s,S} create v/h split
+- t create new tab
+- <tab> tabnext
+- `+` Switch between the splits
+- n NERDTreeToggle
+
 ## Feedback
 
 If you'd like to contribute to the project or file a bug or feature request, please visit [the project page][1].

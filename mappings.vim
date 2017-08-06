@@ -11,6 +11,7 @@ nmap S :wincmd s<CR>
 " t create new tab
 nmap t :tabnew<CR>
 "nmap q :tabclose<CR>
+" <tab> tabnext
 nmap <tab> :tabnext<CR>
 
 " `+` Switch between the splits
