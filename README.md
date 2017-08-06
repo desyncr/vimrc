@@ -5,11 +5,16 @@ My vimrc settings and custom configurations.
 
 ## Setup
 
+    make install
+    # make uninstall
+
+## Manual setup
+
 Set up custom configuration (this repo):
 
     git clone https://github.com/desyncr/vimrc.git $HOME/.vim
     ln -s $HOME/.vim/vimrc.vim ~/.vimrc
-
+    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 ## Feedback
 
