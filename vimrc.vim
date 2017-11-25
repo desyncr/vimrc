@@ -23,6 +23,10 @@ set showmatch           " highlighit matching [{()}]
 set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
 
+set nobackup            " no backup files
+set nowritebackup       " only in case you don't want a backup file while editing
+set noswapfile          " no swap files
+
 " remove highlighting for search
 nnoremap <leader><space> :nohlsearch<CR>
 "nnoremap <esc> :nohlsearch<CR>
