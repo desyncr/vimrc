@@ -32,8 +32,7 @@ Set up custom configuration (this repo):
 - . tabnext
 - \<leader\>\<leader\> Switch between the splits
 - n NERDTreeToggle
-- q Quit split/window
-- Q Quit tab
+- q Quit split/window/tab
 
 ## Feedback
 
