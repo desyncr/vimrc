@@ -1,4 +1,4 @@
-" `+{h,j,k,l} move x split
+" `+{h,j,k,l} move x split/window
 map <leader>h :wincmd h<CR>
 map <leader>j :wincmd j<CR>
 map <leader>k :wincmd k<CR>
@@ -10,11 +10,18 @@ nmap S :wincmd s<CR>
 
 " t create new tab
 nmap t :tabnew<CR>
-"nmap q :tabclose<CR>
-" <tab> tabnext
-nmap <tab> :tabnext<CR>
+" q close window
+nmap q :wincmd q<CR>
+" Q close tab
+nmap Q :tabclose<CR>
+" <tab> next window
+nmap <tab> :wincmd w<CR>
 
-" `+` Switch between the splits
+" nmap <tab> :tabnext<CR>
+" . next tab
+nmap . :tabnext<CR>
+
+" `,` Switch between the splits
 nnoremap <leader><leader>  <C-W><C-W>
 
 " n NERDTreeToggle

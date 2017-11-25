@@ -25,12 +25,15 @@ Set up custom configuration (this repo):
 
 # Mappings
 
-- \<leader\>+{h,j,k,l} move x split
+- \<leader\>+{h,j,k,l} move x split/window
+- tab move next split/window
 - {s,S} create v/h split
-- t create new tab
-- \<tab\> tabnext
+- T create new tab
+- . tabnext
 - \<leader\>\<leader\> Switch between the splits
 - n NERDTreeToggle
+- q Quit split/window
+- Q Quit tab
 
 ## Feedback
 
