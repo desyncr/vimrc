@@ -18,21 +18,23 @@ Set up custom configuration (this repo):
 
 # Vundles
 
-- tpope/vim-fugitive
+- tpope/vim-fugitive -- Git wrapper
 - ctrlpvim/ctrlp.vim -- Ctrl+p
 - scrooloose/nerdtree -- n (normal mode)
 - mileszs/ack.vim -- :Ack
 
 # Mappings
 
-- \<leader\>+{h,j,k,l} move x split/window
-- tab move next split/window
-- {s,S} create v/h split
-- T create new tab
-- . tabnext
-- \<leader\>\<leader\> Switch between the splits
-- n NERDTreeToggle
-- q Quit split/window/tab
+- `n` NERDTreeToggle
+- `{s,S}` create v/h split
+- `T` create new tab
+- `Ctrl+p` fuzzy search
+
+- `tab` move next split/window
+- `.` tabnext
+- `<leader><leader>` Switch between the splits
+- `q` Quit split/window/tab
+- `<leader>+{h,j,k,l}` move x split/window
 
 ## Feedback
 
