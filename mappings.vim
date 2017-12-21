@@ -2,8 +2,8 @@
 nmap n :NERDTreeToggle<CR>
 
 " {s,S} create v/h split
-nmap s :wincmd v<CR>
-nmap S :wincmd s<CR>
+nmap s :vnew<CR>
+nmap S :new hor<CR>
 
 " t create new tab
 nmap t :tabnew<CR>

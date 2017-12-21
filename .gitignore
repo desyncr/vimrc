@@ -1,3 +1,4 @@
 *.old
 bundle/*
 vimrc
+.netrwhist
