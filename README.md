@@ -31,6 +31,8 @@ Set up custom configuration (this repo):
 - \<tab\> tabnext
 - \<leader\>\<leader\> Switch between the splits
 - n NERDTreeToggle
+- {w,W} word forward/backward
+- {b,B} buffer forward/backward
 
 ## Feedback
 

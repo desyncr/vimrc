@@ -4,19 +4,36 @@ map <leader>j :wincmd j<CR>
 map <leader>k :wincmd k<CR>
 map <leader>l :wincmd l<CR>
 
-" {s,S} create v/h split
-nmap s :wincmd v<CR>
-nmap S :wincmd s<CR>
+" q close current split
+nmap q :wincmd c<CR>
+
+" {s,V,S} create h,v,v split
+nmap s :wincmd s<CR>
+nmap V :wincmd v<CR>
+nmap S :wincmd v<CR>
 
 " t create new tab
 nmap t :tabnew<CR>
-"nmap q :tabclose<CR>
-" <tab> tabnext
-nmap <tab> :tabnext<CR>
 
-" `+` Switch between the splits
-nnoremap <leader><leader>  <C-W><C-W>
+" Q close current tab
+nmap Q :tabclose<CR>
+
+" `+` tabnext
+nmap <leader><leader> :tabnext<CR>
+
+" <tab> Switch between the splits
+nmap <tab> <C-W><C-W>
 
 " n NERDTreeToggle
 nmap n :NERDTreeToggle<CR>
 
+" remove highlight
+nmap <esc> :nohl<CR>
+
+" reload vim config
+nmap R :so ~/.vimrc<CR>
+
+nmap W b
+
+nmap b :bnext<CR>
+nmap B :bprev<CR>
