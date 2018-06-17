@@ -15,10 +15,10 @@ set number              " show line numbers
 set numberwidth=5
 
 set showcmd             " show command in bottom bar
-set cursorline          " highlight current line
+"set cursorline          " highlight current line
 filetype indent on      " load filetype-specific indent files
 
-set showmatch           " highlighit matching [{()}]
+"set showmatch           " highlighit matching [{()}]
 
 set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
@@ -44,4 +44,5 @@ set paste
 " ex command tab completion mode
 set wildmenu wildmode=full
 
+source ~/.vim/imported.vim
 source ~/.vim/mappings.vim

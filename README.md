@@ -23,20 +23,28 @@ Set up custom configuration (this repo):
 - scrooloose/nerdtree -- n (normal mode)
 - mileszs/ack.vim -- :Ack
 
+... and others.
+
 # Mappings
 
 - `n` NERDTreeToggle
-- `{s,S}` create v/h split
+- `CR` CTags
+- `{s,H}` create v/h split
 - `t` create new tab
+- `T` move to next tab
 - `Ctrl+p` fuzzy search
 
-- `tab` move next split/window
-- `.` tabnext
-- `<leader><leader>` Switch between the splits
+- `tab` move next split
+- `.` next buffer
+- `>` prev buffer
 - `q` Quit split/window/tab
 - `<leader>+{h,j,k,l}` move x split/window
 - {w,W} word forward/backward
 - {b,B} buffer forward/backward
+
+- `<leader>+r` reload vim config
+
+- `W` write file
 
 ## Feedback
 

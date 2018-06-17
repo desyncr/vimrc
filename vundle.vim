@@ -8,10 +8,12 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'tpope/vim-fugitive'
-Plugin 'ctrlpvim/ctrlp.vim'
+"Plugin 'tpope/vim-fugitive'
+"Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'mileszs/ack.vim'
+"Plugin 'mileszs/ack.vim'
+
+source ~/.vim/imported.vundle.vim
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
