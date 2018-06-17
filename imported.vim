@@ -146,12 +146,6 @@ autocmd FileType php inoremap <C-p> <ESC>:call pdv#DocumentWithSnip()<CR>i
 autocmd FileType php nnoremap <C-p> :call pdv#DocumentWithSnip()<CR>
 autocmd FileType php setlocal omnifunc=phpcd#CompletePHP
 
-" Disable arrow movement, resize splits instead.
-nnoremap <Up>    :resize +2<CR>
-nnoremap <Down>  :resize -2<CR>
-nnoremap <Left>  :vertical resize +2<CR>
-nnoremap <Right> :vertical resize -2<CR>
-
 map <silent> <LocalLeader>ws :highlight clear ExtraWhitespace<CR>
 
 " Advanced customization using autoload functions
