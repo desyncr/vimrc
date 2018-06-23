@@ -39,10 +39,12 @@ set textwidth=80
 set colorcolumn=+1
 
 " avoid paste errors
-set paste
+"set paste
 
 " ex command tab completion mode
 set wildmenu wildmode=full
+
+set autochdir
 
 source ~/.vim/imported.vim
 source ~/.vim/mappings.vim
