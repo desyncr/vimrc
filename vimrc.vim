@@ -46,5 +46,7 @@ set wildmenu wildmode=full
 
 set autochdir
 
+set nowrap
+
 source ~/.vim/imported.vim
 source ~/.vim/mappings.vim

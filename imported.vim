@@ -142,9 +142,9 @@ imap <c-x><c-j> <plug>(fzf-complete-file-ag)
 imap <c-x><c-l> <plug>(fzf-complete-line)
 
 " Vim-PDV Mappings
-autocmd FileType php inoremap <C-p> <ESC>:call pdv#DocumentWithSnip()<CR>i
-autocmd FileType php nnoremap <C-p> :call pdv#DocumentWithSnip()<CR>
-autocmd FileType php setlocal omnifunc=phpcd#CompletePHP
+"autocmd FileType php inoremap <C-p> <ESC>:call pdv#DocumentWithSnip()<CR>i
+"autocmd FileType php nnoremap <C-p> :call pdv#DocumentWithSnip()<CR>
+"autocmd FileType php setlocal omnifunc=phpcd#CompletePHP
 
 map <silent> <LocalLeader>ws :highlight clear ExtraWhitespace<CR>
 
