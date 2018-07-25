@@ -1,9 +1,9 @@
 " n NERDTreeToggle
-nmap n :NERDTreeToggle<CR>
+nmap <leader>n :NERDTreeToggle<CR>
 
 " {s,h} create v/h split
-nmap s :vnew<CR>
-nmap H :new<CR>
+nmap <leader>V :vnew<CR>
+nmap <leader>H :new<CR>
 
 " <tab> Switch between the splits
 nnoremap <tab>  <C-W><C-W>
@@ -15,30 +15,30 @@ map <leader>k :wincmd k<CR>
 map <leader>l :wincmd l<CR>
 
 " q close window
-nmap q :bdelete<CR>
-nmap Q :quit<CR>
+nmap <leader>q :bdelete<CR>
+nmap <leader>Q :quit<CR>
 
 " t create new tab
-nmap t :tabnew<CR>
+nmap <leader>t :tabnew<CR>
 " T next tab
-nnoremap T :tabnext<CR>
+nnoremap <leader>T :tabnext<CR>
 
 " . next buffer
-nmap . :bnext<CR>
+nmap <leader>> :bnext<CR>
 " > prev buffer
-nmap > :bprev<CR>
+nmap <leader>< :bprev<CR>
 
 " remove highlight
 nmap <esc> :nohl<CR>
 
 " reload vim config
-nmap R :so ~/.vimrc<CR>
+nmap <leader>R :so ~/.vimrc<CR>
 
 " open buffergator
 nnoremap <leader>t :BuffergatorToggle<CR>
 
 " W write file
-nnoremap W :write<CR>
+nnoremap <leader>W :write<CR>
 
 " shortcuts
 nnoremap <c-p> :GitFiles<CR>
