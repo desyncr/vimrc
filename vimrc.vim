@@ -13,12 +13,13 @@ set expandtab           " tabs are spaces
 
 set number              " show line numbers
 set numberwidth=5
+set relativenumber
 
 set showcmd             " show command in bottom bar
-"set cursorline          " highlight current line
+set cursorline          " highlight current line
 filetype indent on      " load filetype-specific indent files
 
-"set showmatch           " highlighit matching [{()}]
+set showmatch           " highlight matching [{()}]
 
 set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
