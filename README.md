@@ -18,31 +18,30 @@ Set up custom configuration (this repo):
 
 # Vundles
 
-VundleVim/Vundle.vim
+    VundleVim/Vundle.vim
 
-scrooloose/nerdtree
+    scrooloose/nerdtree
 
-junegunn/fzf.vim
-junegunn/fzf
+    junegunn/fzf.vim
+    junegunn/fzf
 
-vim-airline/vim-airline
-vim-airline/vim-airline-themes
+    vim-airline/vim-airline
+    vim-airline/vim-airline-themes
 
-tpope/vim-fugitive
-yegappan/mru
+    tpope/vim-fugitive
+    yegappan/mru
 
-ctrlpvim/ctrlp.vim
-DavidEGx/ctrlp-smarttabs
+    ctrlpvim/ctrlp.vim
+    DavidEGx/ctrlp-smarttabs
 
 # Mappings
 
-Main sections
-Configs:            <leader>+c+{r,e,c,m,v}
-Projects:           <leader>+p+{s,m,f,n,b}
-Splits:             <leader>+s+{n,nh,nv,c,h,j,k,l,=,\_,|}
-Tabs:               <leader>+t+{n,l,h,c}
-Buffers:            <leader>+b+{l,h,c}
-Windows:            <leader>+w -- disabled
+    Configs:            <leader>+c+{r,e,c,m,v}
+    Projects:           <leader>+p+{s,m,f,n,b}
+    Splits:             <leader>+s+{n,nh,nv,c,h,j,k,l,=,\_,|}
+    Tabs:               <leader>+t+{n,l,h,c}
+    Buffers:            <leader>+b+{l,h,c}
+    Windows:            <leader>+w -- disabled
 
 ## Feedback
 
