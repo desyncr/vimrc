@@ -1,52 +1,91 @@
-" n NERDTreeToggle
-nmap <leader>n :NERDTreeToggle<CR>
+" vim: foldmethod=marker
 
-" {s,h} create v/h split
-nmap <leader>V :vnew<CR>
-nmap <leader>H :new<CR>
+" Main sections {{{{
+" Configs:            <leader>+c+{r,e,c,m,v}
+" Projects:           <leader>+p+{s,m,f,n,b}
+" Splits:             <leader>+s+{n,nh,nv,c,h,j,k,l,=,_,|}
+" Tabs:               <leader>+t+{n,l,h,c}
+" Buffers:            <leader>+b+{l,h,c}
+" Windows:            <leader>+w -- disabled
+" }}}
 
+" Shortcuts {{{{
 " <tab> Switch between the splits
 nnoremap <tab>  <C-W><C-W>
 
-" `+{h,j,k,l} move x split/window
-map <leader>h :wincmd h<CR>
-map <leader>j :wincmd j<CR>
-map <leader>k :wincmd k<CR>
-map <leader>l :wincmd l<CR>
-
-" q close window
-nmap <leader>q :bdelete<CR>
-nmap <leader>Q :quit<CR>
-
-" t create new tab
-nmap <leader>t :tabnew<CR>
-" T next tab
-nnoremap <leader>T :tabnext<CR>
-
-" . next buffer
-nmap <leader>> :bnext<CR>
-" > prev buffer
-nmap <leader>< :bprev<CR>
+" {V,H} create v/h split
+nmap <leader>V :vnew<CR>
+nmap <leader>H :new<CR>
 
 " remove highlight
-nmap <esc> :nohl<CR>
+nmap <esc><esc> :nohl<CR>
 
+" C+w+{=,_,|} - Equal proporsions, maximise vertically, horizontally
+" }}}}
+
+" Configs {{{{
 " reload vim config
-nmap <leader>R :so ~/.vimrc<CR>
+nmap <leader>cr :so ~/.vimrc<CR>
+nmap <leader>cc :e ~/.vimrc<CR>
+nmap <leader>ce :e ~/.vimrc<CR>
+nmap <leader>cm :e ~/.vim/mappings.vim<CR>
+nmap <leader>cv :e ~/.vim/vundle.vim<CR>
+" }}}}
 
-" open buffergator
-nnoremap <leader>t :BuffergatorToggle<CR>
+" Projects {{{{
+" Search with Ag
+nmap <leader>ps :Ag<CR>
+nmap <leader>pm :MRU<CR>
+nmap <leader>pf :GitFiles<CR>
+nmap <leader>pn :NERDTreeToggle<CR>
+nmap <leader>pb :CtrlPBuffer<CR>
+" }}}}
 
-" W write file
-nnoremap <leader>W :write<CR>
+" Splits {{{{
+" sn{v,h} create v/h splits
+nmap <leader>sn :new<CR>
+nmap <leader>snh :new<CR>
+nmap <leader>snv :vnew<CR>
+" sc close split
+nmap <leader>sc :close<CR>
 
-" shortcuts
-nnoremap <c-p> :GitFiles<CR>
-nnoremap <Leader>o :Files<CR>
-nnoremap <Leader>O :CtrlP<CR>
+" s{h,j,k,l} move between splits
+nnoremap <leader>sh <C-W>h
+nnoremap <leader>sj <C-W>j
+nnoremap <leader>sk <C-W>k
+nnoremap <leader>sl <C-W>l
 
-" disable arrow movement, resize splits instead.
-nnoremap <Up>    :resize +2<CR>
-nnoremap <Down>  :resize -2<CR>
-nnoremap <Left>  :vertical resize +2<CR>
-nnoremap <Right> :vertical resize -2<CR>
+" manage splits dimensions
+nnoremap <leader>s= <C-W>=
+nnoremap <leader>s_ <C-W>_
+nnoremap <leader>s\| <C-W>\|
+" }}}}
+
+" Windows {{{{
+" w{h,j,k,l} move x split/window
+"map <leader>wh :wincmd h<CR>
+"map <leader>wj :wincmd j<CR>
+"map <leader>wk :wincmd k<CR>
+"map <leader>wl :wincmd l<CR>
+" }}}}
+
+" Buffers {{{{
+" bl next buffer
+nmap <leader>bl :bnext<CR>
+" bh prev buffer
+nmap <leader>bh :bprev<CR>
+" b{q} close buffer
+nmap <leader>bc :bdelete<CR>
+" bf buffers find
+nmap <leader>bf :CtrlPBuffer<CR>
+" }}}}
+
+" Tabs {{{{
+" t{n} create new tab
+nnoremap <leader>tn :tabnew<CR>
+" t{l,h} next/prev tab
+nnoremap <leader>tl :tabnext<CR>
+nnoremap <leader>th :tabprev<CR>
+" tc tab close
+nnoremap <leader>tc :tabclose<CR>
+" }}}}

@@ -1,4 +1,6 @@
-*.old
 bundle/*
 vimrc
 .netrwhist
+.backup
+.swap
+.undo

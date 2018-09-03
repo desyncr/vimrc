@@ -8,12 +8,20 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-"Plugin 'tpope/vim-fugitive'
-"Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 "Plugin 'mileszs/ack.vim'
 
-source ~/.vim/imported.vundle.vim
+"Plugin 'majutsushi/tagbar'
+Plugin 'junegunn/fzf.vim'
+Plugin 'junegunn/fzf'
+
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
+Plugin 'tpope/vim-fugitive'
+Plugin 'yegappan/mru'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'DavidEGx/ctrlp-smarttabs'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

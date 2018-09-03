@@ -18,33 +18,31 @@ Set up custom configuration (this repo):
 
 # Vundles
 
-- tpope/vim-fugitive -- Git wrapper
-- ctrlpvim/ctrlp.vim -- Ctrl+p
-- scrooloose/nerdtree -- n (normal mode)
-- mileszs/ack.vim -- :Ack
+VundleVim/Vundle.vim
 
-... and others.
+scrooloose/nerdtree
+
+junegunn/fzf.vim
+junegunn/fzf
+
+vim-airline/vim-airline
+vim-airline/vim-airline-themes
+
+tpope/vim-fugitive
+yegappan/mru
+
+ctrlpvim/ctrlp.vim
+DavidEGx/ctrlp-smarttabs
 
 # Mappings
 
-- `n` NERDTreeToggle
-- `CR` CTags
-- `{s,H}` create v/h split
-- `t` create new tab
-- `T` move to next tab
-- `Ctrl+p` fuzzy search
-
-- `tab` move next split
-- `.` next buffer
-- `>` prev buffer
-- `q` Quit split/window/tab
-- `<leader>+{h,j,k,l}` move x split/window
-- {w,W} word forward/backward
-- {b,B} buffer forward/backward
-
-- `<leader>+r` reload vim config
-
-- `W` write file
+Main sections
+Configs:            <leader>+c+{r,e,c,m,v}
+Projects:           <leader>+p+{s,m,f,n,b}
+Splits:             <leader>+s+{n,nh,nv,c,h,j,k,l,=,\_,|}
+Tabs:               <leader>+t+{n,l,h,c}
+Buffers:            <leader>+b+{l,h,c}
+Windows:            <leader>+w -- disabled
 
 ## Feedback
 

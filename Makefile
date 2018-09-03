@@ -12,3 +12,5 @@ uninstall:
 	rm ${VIMRC}
 	rm ${PREFIX}
 	rm -r ${PWD}/bundle
+docs:
+	cat mappings.vim|head -n 10|tail -n 9|sed  's/" //' | sed 's/ {{{{//'|sed 's/}}}//'
