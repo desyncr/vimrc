@@ -2,10 +2,10 @@
 
 " Main sections {{{{
 " Configs:            <leader>+c+{r,e,c,m,v}
-" Projects:           <leader>+p+{s,m,f,n,b}
+" Projects:           <leader>+p+{s,m,f,n}
 " Splits:             <leader>+s+{n,nh,nv,c,h,j,k,l,=,_,|}
 " Tabs:               <leader>+t+{n,l,h,c}
-" Buffers:            <leader>+b+{l,h,c}
+" Buffers:            <leader>+b+{f,l,h,d}
 " Windows:            <leader>+w -- disabled
 " }}}
 
@@ -14,15 +14,14 @@
 nnoremap <tab>  <C-W><C-W>
 
 " {V,H} create v/h split
-nmap <leader>V :vnew<CR>
-nmap <leader>H :new<CR>
+"nmap <leader>V :vnew<CR>
+"nmap <leader>H :new<CR>
 
 " remove highlight
 nmap <esc><esc> :nohl<CR>
 
 " C+w+{=,_,|} - Equal proporsions, maximise vertically, horizontally
 " }}}}
-
 " Configs {{{{
 " reload vim config
 nmap <leader>cr :so ~/.vimrc<CR>
@@ -31,16 +30,13 @@ nmap <leader>ce :e ~/.vimrc<CR>
 nmap <leader>cm :e ~/.vim/mappings.vim<CR>
 nmap <leader>cv :e ~/.vim/vundle.vim<CR>
 " }}}}
-
 " Projects {{{{
 " Search with Ag
 nmap <leader>ps :Ag<CR>
 nmap <leader>pm :MRU<CR>
-nmap <leader>pf :GitFiles<CR>
+nmap <leader>pf :CtrlP<CR>
 nmap <leader>pn :NERDTreeToggle<CR>
-nmap <leader>pb :CtrlPBuffer<CR>
 " }}}}
-
 " Splits {{{{
 " sn{v,h} create v/h splits
 nmap <leader>sn :new<CR>
@@ -60,7 +56,6 @@ nnoremap <leader>s= <C-W>=
 nnoremap <leader>s_ <C-W>_
 nnoremap <leader>s\| <C-W>\|
 " }}}}
-
 " Windows {{{{
 " w{h,j,k,l} move x split/window
 "map <leader>wh :wincmd h<CR>
@@ -68,18 +63,16 @@ nnoremap <leader>s\| <C-W>\|
 "map <leader>wk :wincmd k<CR>
 "map <leader>wl :wincmd l<CR>
 " }}}}
-
 " Buffers {{{{
 " bl next buffer
 nmap <leader>bl :bnext<CR>
 " bh prev buffer
 nmap <leader>bh :bprev<CR>
-" b{q} close buffer
-nmap <leader>bc :bdelete<CR>
+" bd close buffer
+nmap <leader>bd :bdelete<CR>
 " bf buffers find
 nmap <leader>bf :CtrlPBuffer<CR>
 " }}}}
-
 " Tabs {{{{
 " t{n} create new tab
 nnoremap <leader>tn :tabnew<CR>

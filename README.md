@@ -34,13 +34,15 @@ Set up custom configuration (this repo):
     ctrlpvim/ctrlp.vim
     DavidEGx/ctrlp-smarttabs
 
+    liuchengxu/vim-which-key
+
 # Mappings
 
     Configs:            <leader>+c+{r,e,c,m,v}
-    Projects:           <leader>+p+{s,m,f,n,b}
+    Projects:           <leader>+p+{s,m,f,n}
     Splits:             <leader>+s+{n,nh,nv,c,h,j,k,l,=,\_,|}
     Tabs:               <leader>+t+{n,l,h,c}
-    Buffers:            <leader>+b+{l,h,c}
+    Buffers:            <leader>+b+{f,l,h,d}
     Windows:            <leader>+w -- disabled
 
 ## Feedback
