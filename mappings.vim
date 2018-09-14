@@ -1,12 +1,13 @@
 " vim: foldmethod=marker
 
 " Main sections {{{{
-" Configs:            <leader>+c+{r,e,c,m,v}
-" Projects:           <leader>+p+{s,m,f,n}
-" Splits:             <leader>+s+{n,nh,nv,c,h,j,k,l,=,_,|}
-" Tabs:               <leader>+t+{n,l,h,c}
-" Buffers:            <leader>+b+{f,l,h,d}
-" Windows:            <leader>+w -- disabled
+" Configs.....................................Vim configs, plugins
+" Projects....................................File listing, search
+" Splits...................................Split open, move, close
+" Tabs.......................................Tab open, move, close
+" Buffers.................................Buffer list, open, close
+" Mode.............................................View mode, zoom
+" VCS...........................................VCS status, commit
 " }}}
 
 " Shortcuts {{{{

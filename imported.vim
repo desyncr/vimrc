@@ -20,10 +20,10 @@ let g:hybrid_custom_term_colors = 1
 let g:hybrid_reduced_contrast = 0
 
 let g:fzf_layout = { 'down': '~20%' }
-" Overwrite default cc red
-hi ColorColumn ctermbg=8
-hi Search         term=none ctermfg=black ctermbg=12 guifg=wheat guibg=peru
-hi Visual         term=none cterm=none ctermbg=grey ctermfg=black guifg=khaki guibg=olivedrab
+hi ColorColumn ctermbg=8 |
+hi Search         term=none ctermfg=black ctermbg=12 guifg=wheat guibg=peru |
+hi Visual         term=none cterm=none ctermbg=grey ctermfg=black guifg=khaki guibg=olivedrab |
+
 " }}}
 " {{{ Leaderf
 let g:Lf_ShortcutF = '<leader>pf'

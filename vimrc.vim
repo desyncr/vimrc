@@ -46,8 +46,8 @@ set scrolloff=3         " Minumum lines to keep above and below cursor
 set list listchars=tab:»·,trail:·,nbsp:·
 
 " Make it obvious where 80 characters is
-set textwidth=80
-set colorcolumn=+1
+"set textwidth=80
+"set colorcolumn=+1
 
 "set autochdir
 
