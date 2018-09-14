@@ -4,9 +4,8 @@ colorscheme desert
 syntax enable
 
 " leader is comma
-let mapleader="`"
-let g:mapleader="`"
-" noremap ; :
+let mapleader=";"
+let g:mapleader=";"
 
 set nocompatible
 
@@ -79,7 +78,13 @@ noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 
+set omnifunc=syntaxcomplete#Complete
+
 source ~/.vim/imported.vim
 source ~/.vim/mappings.vim
 source ~/.vim/commands.vim
 
+set lazyredraw
+set switchbuf+=usetab
+
+set clipboard=unnamed

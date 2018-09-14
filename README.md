@@ -29,21 +29,38 @@ Set up custom configuration (this repo):
     vim-airline/vim-airline-themes
 
     tpope/vim-fugitive
-    yegappan/mru
+    junegunn/gv.vim
 
-    ctrlpvim/ctrlp.vim
-    DavidEGx/ctrlp-smarttabs
+    majutsushi/tagbar
+    Yggdroot/LeaderF
+    junegunn/goyo.vim
+
+    w0rp/ale
+
+    terryma/vim-multiple-cursors
 
     liuchengxu/vim-which-key
 
+    airblade/vim-gitgutter
+
+    vim-scripts/ZoomWin
+    Valloric/YouCompleteMe
+
+    skywind3000/asyncrun.vim
+
+    arnaud-lb/vim-php-namespace
+
 # Mappings
 
-    Configs:            <leader>+c+{r,e,c,m,v}
-    Projects:           <leader>+p+{s,m,f,n}
-    Splits:             <leader>+s+{n,nh,nv,c,h,j,k,l,=,\_,|}
+    Configs:            <leader>+c+{r,e,m,v,k,i,u}
+    Projects:           <leader>+p+{s,m,f,n,t}
+    Splits:             <leader>+s+{n,v,c,h,j,k,l,=,\_,|}
     Tabs:               <leader>+t+{n,l,h,c}
-    Buffers:            <leader>+b+{f,l,h,d}
-    Windows:            <leader>+w -- disabled
+    Buffers:            <leader>+b+{s,l,h,d,t,f,T}
+    Mode:               <leader>+m+{w,z,g,s}
+    VCS:                <leader>+v+{a,P,f,p,s,c,b,l,d}
+
+Use `<leader>` key to see mappings, default `;`. See `mappings.vim` for details.
 
 ## Feedback
 

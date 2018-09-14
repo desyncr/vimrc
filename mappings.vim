@@ -18,67 +18,102 @@ nnoremap <tab>  <C-W><C-W>
 "nmap <leader>H :new<CR>
 
 " remove highlight
-nmap <esc><esc> :nohl<CR>
+nmap // :nohl<CR>
+
+nnoremap <CR> :LeaderfMru<CR>
 
 " C+w+{=,_,|} - Equal proporsions, maximise vertically, horizontally
 " }}}}
-" Configs {{{{
-" reload vim config
-nmap <leader>cr :so ~/.vimrc<CR>
-nmap <leader>cc :e ~/.vimrc<CR>
-nmap <leader>ce :e ~/.vimrc<CR>
-nmap <leader>cm :e ~/.vim/mappings.vim<CR>
-nmap <leader>cv :e ~/.vim/vundle.vim<CR>
-" }}}}
-" Projects {{{{
-" Search with Ag
-nmap <leader>ps :Ag<CR>
-nmap <leader>pm :MRU<CR>
-nmap <leader>pf :CtrlP<CR>
-nmap <leader>pn :NERDTreeToggle<CR>
-" }}}}
-" Splits {{{{
-" sn{v,h} create v/h splits
-nmap <leader>sn :new<CR>
-nmap <leader>snh :new<CR>
-nmap <leader>snv :vnew<CR>
-" sc close split
-nmap <leader>sc :close<CR>
+" WhichKey {{{
+"nnoremap <silent> <leader> :WhichKey '`'<CR>
+set timeoutlen=300
 
-" s{h,j,k,l} move between splits
-nnoremap <leader>sh <C-W>h
-nnoremap <leader>sj <C-W>j
-nnoremap <leader>sk <C-W>k
-nnoremap <leader>sl <C-W>l
+let g:which_key_map =  {}
+" Configs:            <leader>+c+{r,e,m,v,i,u} {{{
+let g:which_key_map['c'] = {
+    \ 'name' : '+config',
+    \ 'r': [':so ~/.vimrc'    , 'Reload .vimrc'],
+    \ 'e': [':e ~/.vimrc'     , 'Edit .vimrc'],
+    \ 'm': [':e ~/.vim/mappings.vim' , 'Edit mappings'],
+    \ 'v': [':e ~/.vim/vundle.vim'   , 'Edit plugins'],
+    \ 'k': [':e ~/.vim/imported.vim' , 'Edit imported (keybindings)'],
+    \ 'i': [':PluginInstall'  , 'Install plugins'],
+    \ 'u': [':PluginUpdate'   , 'Update plugins']
+    \ }
+" }}}
+" Projects:           <leader>+p+{s,m,f,n,b} {{{
+let g:which_key_map['p'] = {
+    \ 'name' : '+projects' ,
+    \ 's' : [':Ag'            , 'Search content'] ,
+    \ 'w' : [':Ag <C-R><C-W><CR>' , 'Search word']    ,
+    \ 'm' : [':LeaderfMru'    , 'Recent files']   ,
+    \ 'f' : [':LeaderfFile'   , 'Fuzzy find']     ,
+    \ 'n' : [':NERDTreeFind'  , 'NERDTree']       ,
+    \ }
+" }}}
+" Splits:             <leader>+s+{n,v,c,h,j,k,l,=,_,|} {{{
+let g:which_key_map['s'] = {
+    \ 'name' : '+splits'      ,
+    \ 'n'  : [':new'          , 'New split (hor)'],
+    \ 'v'  : [':vnew'         , 'New split (ver)'],
+    \ 'c'  : [':close'        , 'Close split'],
+    \ 'h'  : ['<C-W>h'        , 'Focus split left'],
+    \ 'j'  : ['<C-W>j'        , 'Focus split below'],
+    \ 'k'  : ['<C-W>k'        , 'Focus split above'],
+    \ 'l'  : ['<C-W>l'        , 'Focus split right'],
+    \ '='  : ['<C-W>='        , 'Equal width / height'],
+    \ '_'  : ['<C-W>_'        , 'Full width'],
+    \ '|'  : ['<C-W>|'        , 'Full height'],
+    \ }
+" }}}
+" Tabs:               <leader>+t+{n,l,h,c} {{{
+let g:which_key_map['t'] = {
+    \ 'name' : '+tabs'        ,
+    \ 'n'  : [':tabnew'       , 'New tab'],
+    \ 'l'  : [':tabnext'      , 'Next tab'],
+    \ 'h'  : [':tabprev'      , 'Previous tab'],
+    \ 'c'  : [':tabclose'     , 'Close tab'],
+    \ }
+" }}}
+" Buffers:            <leader>+b+{s,l,h,d,t,f,T} {{{
+let g:which_key_map['b'] = {
+    \ 'name' : '+buffer'      ,
+    \ 's': [':LeaderfBuffer'  , 'Find buffer'],
+    \ 'l': [':bnext'          , 'Next buffer'],
+    \ 'h': [':bprev'          , 'Previous buffer'],
+    \ 'd': [':bdel'           , 'Delete buffer'],
+    \ 't': [':LeaderfBufTag'  , 'Search tags'],
+    \ 'f': [':LeaderfFunction', 'Search functions'],
+    \ 'T' : [':Tagbar'        , 'Tagbar']         ,
+    \ }
+" }}}
+" Mode:                 <leader>+m+{w,z,g,s} {{{
+let g:which_key_map['m'] = {
+    \ 'name' : '+mode'      ,
+    \ 'w'    : [':Goyo'     , 'Write mode (toggle)'],
+    \ 'z'    : [':ZoomWin'  , 'Zoom window (toggle)'],
+    \ 'g'    : [':GitGutterToggle', 'Toggle gutter'],
+    \ 's'    : [':Startify' , 'Start up page']
+    \ }
+" }}}
+" VCS: <leader>+v+{a,P,f,p,s,c,b,l,d} {{{
+let g:which_key_map['v'] = {
+    \ 'name' : '+vcs'       ,
+    \ 'a'    : [':Gwrite'   , 'Add'],
+    \ 'P'    : [':Gpush'    , 'Push'],
+    \ 'f'    : [':Gfetch'   , 'Fetch'],
+    \ 'p'    : [':Gpull'    , 'Pull'],
+    \ 's'    : [':Gstatus'  , 'Status'],
+    \ 'c'    : [':Gcommit'  , 'Commit'],
+    \ 'b'    : [':Gblame'   , 'Blame'],
+    \ 'l'    : [':GV', 'Log'],
+    \ 'd'    : [':Gdiff'    , 'Diff']
+    \ }
+" }}}
 
-" manage splits dimensions
-nnoremap <leader>s= <C-W>=
-nnoremap <leader>s_ <C-W>_
-nnoremap <leader>s\| <C-W>\|
-" }}}}
-" Windows {{{{
-" w{h,j,k,l} move x split/window
-"map <leader>wh :wincmd h<CR>
-"map <leader>wj :wincmd j<CR>
-"map <leader>wk :wincmd k<CR>
-"map <leader>wl :wincmd l<CR>
-" }}}}
-" Buffers {{{{
-" bl next buffer
-nmap <leader>bl :bnext<CR>
-" bh prev buffer
-nmap <leader>bh :bprev<CR>
-" bd close buffer
-nmap <leader>bd :bdelete<CR>
-" bf buffers find
-nmap <leader>bf :CtrlPBuffer<CR>
-" }}}}
-" Tabs {{{{
-" t{n} create new tab
-nnoremap <leader>tn :tabnew<CR>
-" t{l,h} next/prev tab
-nnoremap <leader>tl :tabnext<CR>
-nnoremap <leader>th :tabprev<CR>
-" tc tab close
-nnoremap <leader>tc :tabclose<CR>
-" }}}}
+call which_key#register(";", "g:which_key_map")
+nnoremap <silent> <leader> :<c-u>WhichKey ";"<CR>
+vnoremap <silent> <leader> :<c-u>WhichKeyVisual ";"<CR>
+nnoremap <silent> <leader>pw :Ag <C-R><C-W><CR>
+" }}}
+
