@@ -30,26 +30,27 @@ nnoremap <CR> :LeaderfMru<CR>
 set timeoutlen=300
 
 let g:which_key_map =  {}
-" Configs:            <leader>+c+{r,e,m,v,i,u} {{{
+" Configs:            <leader>+c+{r,e,m,v,i,I,u} {{{
 let g:which_key_map['c'] = {
     \ 'name' : '+config',
     \ 'r': [':so ~/.vimrc'    , 'Reload .vimrc'],
     \ 'e': [':e ~/.vimrc'     , 'Edit .vimrc'],
-    \ 'm': [':e ~/.vim/mappings.vim' , 'Edit mappings'],
+    \ 'm': [':e ~/.vim/mappings.vim' , 'Edit mappings (keybindings)'],
     \ 'v': [':e ~/.vim/vundle.vim'   , 'Edit plugins'],
-    \ 'k': [':e ~/.vim/imported.vim' , 'Edit imported (keybindings)'],
-    \ 'i': [':PluginInstall'  , 'Install plugins'],
+    \ 'i': [':e ~/.vim/imported.vim' , 'Edit imported'],
+    \ 'I': [':PluginInstall'  , 'Install plugins'],
     \ 'u': [':PluginUpdate'   , 'Update plugins']
     \ }
 " }}}
-" Projects:           <leader>+p+{s,m,f,n,b} {{{
+" Projects:           <leader>+p+{s,w,m,f,n,N} {{{
 let g:which_key_map['p'] = {
     \ 'name' : '+projects' ,
     \ 's' : [':Ag'            , 'Search content'] ,
-    \ 'w' : [':Ag <C-R><C-W><CR>' , 'Search word']    ,
+    \ 'w' : [':Ag <C-R><C-W><CR>' , 'Search word'],
     \ 'm' : [':LeaderfMru'    , 'Recent files']   ,
     \ 'f' : [':LeaderfFile'   , 'Fuzzy find']     ,
     \ 'n' : [':NERDTreeFind'  , 'NERDTree']       ,
+    \ 'N' : [':NERDTreeToggle', 'NERDTreeToggle'] ,
     \ }
 " }}}
 " Splits:             <leader>+s+{n,v,c,h,j,k,l,=,_,|} {{{
@@ -94,7 +95,8 @@ let g:which_key_map['m'] = {
     \ 'w'    : [':Goyo'     , 'Write mode (toggle)'],
     \ 'z'    : [':ZoomWin'  , 'Zoom window (toggle)'],
     \ 'g'    : [':GitGutterToggle', 'Toggle gutter'],
-    \ 's'    : [':Startify' , 'Start up page']
+    \ 's'    : [':Startify' , 'Start up page'],
+    \ 'n'    : [':set number!' , 'Toggle numbers']
     \ }
 " }}}
 " VCS: <leader>+v+{a,P,f,p,s,c,b,l,d} {{{
