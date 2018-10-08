@@ -88,4 +88,18 @@ set lazyredraw
 set switchbuf+=usetab
 
 set clipboard=unnamed
-
+set nocursorline
+"set mouse=a "or set mouse=a
+"set ttyfast
+"set regexpengine=1
+"set noshowcmd
+"set synmaxcol=200
+"" Set scroll to a third of the window instead of half
+"augroup set_scroll
+"      au BufEnter,WinEnter,WinNew,VimResized *,*.*
+"        \ let &scroll=winheight(win_getid())/3
+"augroup END
+set ttyfast " u got a fast terminal
+set ttyscroll=3
+set lazyredraw " to avoid scrolling problems
+set synmaxcol=4096
