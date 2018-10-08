@@ -18,10 +18,6 @@ Set up custom configuration (this repo):
 
 # Vundles
 
-    VundleVim/Vundle.vim
-
-    scrooloose/nerdtree
-
     junegunn/fzf.vim
     junegunn/fzf
 
@@ -32,7 +28,9 @@ Set up custom configuration (this repo):
     junegunn/gv.vim
 
     majutsushi/tagbar
+
     Yggdroot/LeaderF
+
     junegunn/goyo.vim
 
     w0rp/ale
@@ -44,11 +42,18 @@ Set up custom configuration (this repo):
     airblade/vim-gitgutter
 
     vim-scripts/ZoomWin
-    Valloric/YouCompleteMe
+
+    mhinz/vim-startify
 
     skywind3000/asyncrun.vim
 
     arnaud-lb/vim-php-namespace
+    stephpy/vim-php-cs-fixer
+
+    leafgarland/typescript-vim.git
+    Quramy/tsuquyomi
+
+    nixon/vim-vmath.git
 
 # Mappings
 
@@ -60,7 +65,7 @@ Set up custom configuration (this repo):
     Mode:               <leader>+m+{w,z,g,s}
     VCS:                <leader>+v+{a,P,f,p,s,c,b,l,d}
 
-Use `<leader>` key to see mappings, default `;`. See `mappings.vim` for details.
+Use `<leader>` key to see mappings, default `<space>`. See `mappings.vim` for details.
 
 ## Feedback
 

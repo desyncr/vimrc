@@ -45,7 +45,7 @@ Plugin 'vim-scripts/ZoomWin'
 "  Press <c-w>o : the current window zooms into a full screen
 "  Press <c-w>o again: the previous set of windows is restored
 
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 
 "Plugin 'scrooloose/nerdcommenter'
 
@@ -53,9 +53,18 @@ Plugin 'mhinz/vim-startify'
 
 Plugin 'skywind3000/asyncrun.vim'
 
+" {{{ PHP
 Plugin 'arnaud-lb/vim-php-namespace'
+Plugin 'stephpy/vim-php-cs-fixer'
+" }}}
 
-"Plugin 'stephpy/vim-php-cs-fixer'
+" {{{ Typescript
+Plugin 'leafgarland/typescript-vim.git'
+Plugin 'Quramy/tsuquyomi'
+" }}}
+
+" C-v ++ / paste: "<n, ..>p
+Plugin 'nixon/vim-vmath.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

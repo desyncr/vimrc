@@ -67,5 +67,7 @@ autocmd VimEnter * let t:startify_new_tab = 1
 " {{{ Vim fugitive
 let g:fugitive_git_executable = 'git --no-pager '
 " }}}
-
-"command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, '--word-regexp', <bang>0)
+" {{{ vmath
+vmap <expr>  ++  VMATH_YankAndAnalyse()
+nmap         ++  vip++
+" }}}

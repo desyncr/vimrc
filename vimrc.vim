@@ -4,8 +4,8 @@ colorscheme desert
 syntax enable
 
 " leader is comma
-let mapleader=";"
-let g:mapleader=";"
+let mapleader=" "
+let g:mapleader=" "
 
 set nocompatible
 
@@ -88,3 +88,4 @@ set lazyredraw
 set switchbuf+=usetab
 
 set clipboard=unnamed
+
