@@ -51,8 +51,7 @@ let g:which_key_map['p'] = {
     \ 'm'    : [':LeaderfMru'    , 'Recent files'           ],
     \ 'f'    : [':LeaderfFile'   , 'Fuzzy find'             ],
     \ 'n'    : [':NERDTreeFind'  , 'NERDTree'               ],
-    \ 'N'    : [':NERDTreeToggle', 'NERDTreeToggle'         ],
-    \ 'c'    : ['which_key_ignore', '' ]
+    \ 'N'    : [':NERDTreeToggle', 'NERDTreeToggle'         ]
     \ }
 " }}}
 " Splits:             <leader>+s+{n,v,c,h,j,k,l,=,_,|} {{{
