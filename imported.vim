@@ -71,3 +71,5 @@ let g:fugitive_git_executable = 'git --no-pager '
 vmap <expr>  ++  VMATH_YankAndAnalyse()
 nmap         ++  vip++
 " }}}
+
+command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, '--word-regexp', <bang>0)

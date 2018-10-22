@@ -15,7 +15,7 @@ nnoremap T :NERDTreeToggle<CR>
 nnoremap qq :nohl<CR>
 
 " Remap quit
-nnoremap q :quit<CR>
+nnoremap q :close<CR>
 
 " Remaps leader keys
 nnoremap ; :
