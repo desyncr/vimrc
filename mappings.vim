@@ -46,13 +46,12 @@ let g:which_key_map['c'] = {
 " Projects:           <leader>+p+{s,w,m,f,n,N} {{{
 let g:which_key_map['p'] = {
     \ 'name' : '+projects'    ,
-    \ 's'    : [':Ag'            , 'Search content'         ],
+    \ 's'    : [':Rg '            , 'Search content'         ],
     \ 'w'    : [':Ag <C-R><C-W><CR>' , 'Search word'        ],
     \ 'm'    : [':LeaderfMru'    , 'Recent files'           ],
     \ 'f'    : [':LeaderfFile'   , 'Fuzzy find'             ],
     \ 'n'    : [':NERDTreeFind'  , 'NERDTree'               ],
-    \ 'N'    : [':NERDTreeToggle', 'NERDTreeToggle'         ],
-    \ 'c'    : ['which_key_ignore', '' ]
+    \ 'N'    : [':NERDTreeToggle', 'NERDTreeToggle'         ]
     \ }
 " }}}
 " Splits:             <leader>+s+{n,v,c,h,j,k,l,=,_,|} {{{

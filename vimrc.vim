@@ -82,7 +82,6 @@ set omnifunc=syntaxcomplete#Complete
 
 source ~/.vim/imported.vim
 source ~/.vim/mappings.vim
-source ~/.vim/commands.vim
 
 set lazyredraw
 set switchbuf+=usetab

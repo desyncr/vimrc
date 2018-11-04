@@ -71,5 +71,10 @@ let g:fugitive_git_executable = 'git --no-pager '
 vmap <expr>  ++  VMATH_YankAndAnalyse()
 nmap         ++  vip++
 " }}}
-
-command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, '--word-regexp', <bang>0)
+" {{{ php fixer
+let g:php_cs_fixer_enable_default_mapping = 0
+" }}}
+" {{{ fzf commands
+"command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, '--word-regexp', <bang>0)
+"command! -bang -nargs=* Rg call fzf#vim#grep("rg ".shellescape(<q-args>), 1, {'options': ''}, <bang>0)
+" }}}
