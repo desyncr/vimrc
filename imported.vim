@@ -26,9 +26,10 @@ hi Visual         term=none cterm=none ctermbg=grey ctermfg=black guifg=khaki gu
 
 " }}}
 " {{{ Leaderf
-let g:Lf_ShortcutF = '<leader>pf'
-let g:Lf_ShortcutB = '<leader>bf'
+let g:Lf_ShortcutF = '<leader>BF'
+let g:Lf_ShortcutB = '<leader>BB'
 let g:Lf_WindowHeight = 0.1
+"let g:Lf_CommandMap = {'<C-K>': ['<Up>'], '<C-J>': ['<Down>']}
 " }}}
 " {{{ YCM
 let g:ycm_key_detailed_diagnostics = '<C>byd'
