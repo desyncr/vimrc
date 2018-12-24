@@ -30,6 +30,13 @@ let g:Lf_ShortcutF = '<leader>BF'
 let g:Lf_ShortcutB = '<leader>BB'
 let g:Lf_WindowHeight = 0.1
 "let g:Lf_CommandMap = {'<C-K>': ['<Up>'], '<C-J>': ['<Down>']}
+let g:Lf_WildIgnore = {
+        \ 'dir': ['.git', 'node_modules', 'vendor'],
+        \ 'file': ['*.sw?','~$*','*.bak','*.exe','*.o','*.so','*.py[co]']
+        \}
+let g:Lf_WorkingDirectoryMode='a'
+let g:Lf_RootMarkers = ['.git']
+
 " }}}
 " {{{ YCM
 let g:ycm_key_detailed_diagnostics = '<C>byd'
@@ -78,4 +85,10 @@ let g:php_cs_fixer_enable_default_mapping = 0
 " {{{ fzf commands
 "command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, '--word-regexp', <bang>0)
 "command! -bang -nargs=* Rg call fzf#vim#grep("rg ".shellescape(<q-args>), 1, {'options': ''}, <bang>0)
+" }}}
+" {{{ vim-smooth-scroll
+noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 5, 2)<CR>
+noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 5, 2)<CR>
+noremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 5, 4)<CR>
+noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 5, 4)<CR>
 " }}}

@@ -66,6 +66,10 @@ Plugin 'Quramy/tsuquyomi'
 " C-v ++ / paste: "<n, ..>p
 Plugin 'nixon/vim-vmath.git'
 
+Plugin 'terryma/vim-smooth-scroll'
+
+Plugin 'inside/vim-search-pulse'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
