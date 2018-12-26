@@ -41,7 +41,8 @@ Plugin 'liuchengxu/vim-which-key'
 "Plugin 'wincent/ferret'
 Plugin 'airblade/vim-gitgutter'
 
-Plugin 'vim-scripts/ZoomWin'
+"Plugin 'vim-scripts/ZoomWin'
+Plugin 'regedarek/ZoomWin'
 "  Press <c-w>o : the current window zooms into a full screen
 "  Press <c-w>o again: the previous set of windows is restored
 

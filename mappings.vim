@@ -9,7 +9,7 @@ nmap <leader>V :vnew<CR>
 nmap <leader>H :new<CR>
 
 " Show nerdTree
-nnoremap T :NERDTreeToggle<CR>
+nnoremap <leader>n :NERDTreeToggle<CR>
 
 " Remove highlight
 nnoremap qq :nohl<CR>
@@ -131,6 +131,7 @@ let g:which_key_map['r'] = {
 let g:which_key_map.V = 'which_key_ignore'
 let g:which_key_map.H = 'which_key_ignore'
 let g:which_key_map.q = 'which_key_ignore'
+let g:which_key_map.n = 'which_key_ignore'
 
 call which_key#register("<space>", "g:which_key_map")
 nnoremap <silent> <leader> :<c-u>WhichKey "<space>"<CR>
