@@ -87,8 +87,16 @@ let g:php_cs_fixer_enable_default_mapping = 0
 "command! -bang -nargs=* Rg call fzf#vim#grep("rg ".shellescape(<q-args>), 1, {'options': ''}, <bang>0)
 " }}}
 " {{{ vim-smooth-scroll
-noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 5, 2)<CR>
-noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 5, 2)<CR>
-noremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 5, 4)<CR>
-noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 5, 4)<CR>
+"noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 0, 2)<CR>
+"noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 0, 2)<CR>
+"noremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 0, 4)<CR>
+"noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 0, 4)<CR>
+" }}}
+" {{{ Rg
+command! -bang -nargs=* Rg
+  \ call fzf#vim#grep(
+  \   'rg -g "!vendor" -g "!*scripts/pkg.pe*" -g "!*scripts/pkg.mx*" -g "!*.sql*" -g "!*test*" -g "!*buro_credito*" -g "!*afluenta_libs*" -g "!*fixtures*" -g "!*.js*" -g "!*.json" -g "!*.txt" -g "!*.csv" -g "!node_modules" -g "!map" -g "!wp" -g "!cookie_smf_explode.*" -g "!*old*" --column --line-number --no-heading --color=always '.shellescape(<q-args>), 1,
+  \   <bang>0 ? fzf#vim#with_preview('up:60%')
+  \           : fzf#vim#with_preview('right:50%:hidden', '?'),
+  \   <bang>0)
 " }}}
