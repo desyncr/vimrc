@@ -71,6 +71,9 @@ Plugin 'terryma/vim-smooth-scroll'
 
 Plugin 'inside/vim-search-pulse'
 
+Plugin 'shawncplus/phpcomplete.vim'
+Plugin 'StanAngeloff/php.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required

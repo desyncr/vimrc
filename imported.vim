@@ -100,3 +100,9 @@ command! -bang -nargs=* Rg
   \           : fzf#vim#with_preview('right:50%:hidden', '?'),
   \   <bang>0)
 " }}}
+" {{{ Tags
+" ctags -R --fields=+aimlS --languages=php --exclude=vendor --exclude=node_modules --exclude=afluenta_libs --PHP-kinds=+cdfint-av --exclude="\.git" --tag-relative=yes --exclude="*test.php"
+au BufWritePost *.php silent! !eval '[ -f "ctags" ] && ctags' &
+map <C-]> :sp split<CR>:exec("tag ".expand("<cword>"))<CR>
+set tags=/afluenta-platform/tags
+" }}}
