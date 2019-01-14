@@ -1,6 +1,6 @@
 " vim: foldmethod=marker
 
-" Shortcuts {{{{
+" Shortcuts {{{
 " <tab> Switch between the splits
 nnoremap <tab> <C-W><C-W>
 
@@ -24,7 +24,7 @@ nnoremap ; :
 nnoremap <CR> :LeaderfMru<CR>
 
 " C+w+{=,_,|} - Equal proporsions, maximise vertically, horizontally
-" }}}}
+" }}}
 " WhichKey {{{
 "nnoremap <silent> <leader> :WhichKey '`'<CR>
 set timeoutlen=300
@@ -92,6 +92,7 @@ let g:which_key_map['b'] = {
     \ 'Q'    : [':cclose'        , 'Close quickfix'         ],
     \ 'n'    : [':call multiple_cursors#new("n", 1)' , 'Close quickfix'],
     \ 'w'    : [':w'             , 'Write buffer'           ],
+    \ 'u'    : [':MundoToggle'   , 'Show undo buffer'       ]
     \ }
 " }}}
 " Mode:                 <leader>+m+{w,z,g,s,n,N} {{{
@@ -115,7 +116,8 @@ let g:which_key_map['v'] = {
     \ 's'    : [':Gstatus'  , 'Status'                      ],
     \ 'c'    : [':Gcommit'  , 'Commit'                      ],
     \ 'b'    : [':Gblame'   , 'Blame'                       ],
-    \ 'l'    : [':GV', 'Log'                                ],
+    \ 'l'    : [':GV!'      , 'Log'                         ],
+    \ 'L'    : [':GV'       , 'History'                     ],
     \ 'd'    : [':Gdiff'    , 'Diff'                        ]
     \ }
 " }}}

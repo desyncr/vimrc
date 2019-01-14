@@ -106,3 +106,14 @@ au BufWritePost *.php silent! !eval '[ -f "ctags" ] && ctags' &
 map <C-]> :sp split<CR>:exec("tag ".expand("<cword>"))<CR>
 set tags=/afluenta-platform/tags
 " }}}
+" {{{ ALE
+let g:ale_set_signs = 0
+" }}}
+" {{{ vim-project
+ let g:project_enable_welcome = 0
+" if you want the NERDTree integration.
+let g:project_use_nerdtree = 1
+
+call project#rc("/")
+Project "/afluenta-platform"
+" }}}

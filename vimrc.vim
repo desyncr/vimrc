@@ -62,7 +62,7 @@ set writebackup          " only in case you don't want a backup file while editi
 set swapfile             " swap files
 
 set undofile             " Persistent undo
-set undolevels=1000      " Maximum number of changes that can be undone
+set undolevels=10000     " Maximum number of changes that can be undone
 set undoreload=10000     " Maximum number lines to save for undo on a buffer reload
 
 " https://medium.com/@Aenon/vim-swap-backup-undo-git-2bf353caa02f
@@ -102,3 +102,9 @@ set ttyfast " u got a fast terminal
 set ttyscroll=3
 set lazyredraw " to avoid scrolling problems
 set synmaxcol=4096
+
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
+
+set laststatus=2

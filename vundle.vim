@@ -14,8 +14,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'junegunn/fzf.vim'
 Plugin 'junegunn/fzf'
 
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+"Plugin 'vim-airline/vim-airline'
+"Plugin 'vim-airline/vim-airline-themes'
 
 Plugin 'tpope/vim-fugitive'
 Plugin 'junegunn/gv.vim'
@@ -73,6 +73,17 @@ Plugin 'inside/vim-search-pulse'
 
 Plugin 'shawncplus/phpcomplete.vim'
 Plugin 'StanAngeloff/php.vim'
+
+Plugin 'Valloric/YouCompleteMe'
+
+Plugin 'simnalamburt/vim-mundo'
+Plugin 'tpope/vim-surround'
+
+Plugin 'jiangmiao/auto-pairs'
+
+Plugin 'amiorin/vim-project'
+
+Plugin 'itchyny/lightline.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
