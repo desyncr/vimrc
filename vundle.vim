@@ -57,6 +57,8 @@ Plugin 'skywind3000/asyncrun.vim'
 " {{{ PHP
 Plugin 'arnaud-lb/vim-php-namespace'
 Plugin 'stephpy/vim-php-cs-fixer'
+Plugin 'shawncplus/phpcomplete.vim'
+Plugin 'StanAngeloff/php.vim'
 " }}}
 
 " {{{ Typescript
@@ -68,17 +70,13 @@ Plugin 'Quramy/tsuquyomi'
 Plugin 'nixon/vim-vmath.git'
 
 Plugin 'terryma/vim-smooth-scroll'
-
 Plugin 'inside/vim-search-pulse'
-
-Plugin 'shawncplus/phpcomplete.vim'
-Plugin 'StanAngeloff/php.vim'
 
 Plugin 'Valloric/YouCompleteMe'
 
 Plugin 'simnalamburt/vim-mundo'
-Plugin 'tpope/vim-surround'
 
+Plugin 'tpope/vim-surround'
 Plugin 'jiangmiao/auto-pairs'
 
 Plugin 'amiorin/vim-project'

@@ -12,10 +12,10 @@ nmap <leader>H :new<CR>
 nnoremap <leader>n :NERDTreeToggle<CR>
 
 " Remove highlight
-nnoremap qq :nohl<CR>
+nnoremap qq :nohl<CR>:NERDTreeClose<CR>
 
 " Remap quit
-nnoremap q :close<CR>
+"nnoremap q :close<CR>
 
 " Remaps leader keys
 nnoremap ; :
@@ -23,6 +23,8 @@ nnoremap ; :
 " Show MRU
 nnoremap <CR> :LeaderfMru<CR>
 
+" C+W + {H,J,K,L} - move split
+" C+W + [num] {<,>} resize split
 " C+w+{=,_,|} - Equal proporsions, maximise vertically, horizontally
 " }}}
 " WhichKey {{{

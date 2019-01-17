@@ -80,9 +80,6 @@ noremap <Right> <Nop>
 
 set omnifunc=syntaxcomplete#Complete
 
-source ~/.vim/imported.vim
-source ~/.vim/mappings.vim
-
 set lazyredraw
 set switchbuf+=usetab
 
@@ -103,8 +100,13 @@ set ttyscroll=3
 set lazyredraw " to avoid scrolling problems
 set synmaxcol=4096
 
+" To restore last line position
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
 
+" for lightline 
 set laststatus=2
+
+source ~/.vim/imported.vim
+source ~/.vim/mappings.vim

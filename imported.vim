@@ -26,8 +26,8 @@ hi Visual         term=none cterm=none ctermbg=grey ctermfg=black guifg=khaki gu
 
 " }}}
 " {{{ Leaderf
-let g:Lf_ShortcutF = '<leader>BF'
-let g:Lf_ShortcutB = '<leader>BB'
+let g:Lf_ShortcutF = '<C-P>'
+let g:Lf_ShortcutB = '<C-B>'
 let g:Lf_WindowHeight = 0.1
 "let g:Lf_CommandMap = {'<C-K>': ['<Up>'], '<C-J>': ['<Down>']}
 let g:Lf_WildIgnore = {
@@ -99,6 +99,7 @@ command! -bang -nargs=* Rg
   \   <bang>0 ? fzf#vim#with_preview('up:60%')
   \           : fzf#vim#with_preview('right:50%:hidden', '?'),
   \   <bang>0)
+nnoremap <silent> <Leader>b* :Rg <C-R><C-W><CR>
 " }}}
 " {{{ Tags
 " ctags -R --fields=+aimlS --languages=php --exclude=vendor --exclude=node_modules --exclude=afluenta_libs --PHP-kinds=+cdfint-av --exclude="\.git" --tag-relative=yes --exclude="*test.php"
