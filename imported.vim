@@ -27,11 +27,11 @@ hi Visual         term=none cterm=none ctermbg=grey ctermfg=black guifg=khaki gu
 " }}}
 " {{{ Leaderf
 let g:Lf_ShortcutF = '<C-P>'
-let g:Lf_ShortcutB = '<C-B>'
+let g:Lf_ShortcutB = '<C-K>'
 let g:Lf_WindowHeight = 0.1
 "let g:Lf_CommandMap = {'<C-K>': ['<Up>'], '<C-J>': ['<Down>']}
 let g:Lf_WildIgnore = {
-        \ 'dir': ['.git', 'node_modules', 'vendor'],
+        \ 'dir': ['.git', '*/node_modules/*', 'vendor'],
         \ 'file': ['*.sw?','~$*','*.bak','*.exe','*.o','*.so','*.py[co]']
         \}
 let g:Lf_WorkingDirectoryMode='a'
@@ -40,6 +40,7 @@ let g:Lf_RootMarkers = ['.git']
 " }}}
 " {{{ YCM
 let g:ycm_key_detailed_diagnostics = '<C>byd'
+let g:ycm_auto_trigger = 0
 " }}}
 " {{{ GitGutter
 " Messes up with my mappings
@@ -95,7 +96,7 @@ let g:php_cs_fixer_enable_default_mapping = 0
 " {{{ Rg
 command! -bang -nargs=* Rg
   \ call fzf#vim#grep(
-  \   'rg -g "!vendor" -g "!*scripts/pkg.pe*" -g "!*scripts/pkg.mx*" -g "!*.sql*" -g "!*test*" -g "!*buro_credito*" -g "!*afluenta_libs*" -g "!*fixtures*" -g "!*.js*" -g "!*.json" -g "!*.txt" -g "!*.csv" -g "!node_modules" -g "!map" -g "!wp" -g "!cookie_smf_explode.*" -g "!*old*" --column --line-number --no-heading --color=always '.shellescape(<q-args>), 1,
+  \   'rg --sort modified -g "!vendor" -g "!.git/*" -g "!*node_modules*" -g "!*scripts/pkg.pe*" -g "!*scripts/pkg.mx*" -g "!*.sql*" -g "!*test*" -g "!*buro_credito*" -g "!*afluenta_libs*" -g "!*fixtures*" -g "!*.js*" -g "!*.json" -g "!*.txt" -g "!*.csv" -g "!node_modules" -g "!map" -g "!wp" -g "!cookie_smf_explode.*" -g "!*old*" --column --line-number --no-heading --color=always '.shellescape(<q-args>), 1,
   \   <bang>0 ? fzf#vim#with_preview('up:60%')
   \           : fzf#vim#with_preview('right:50%:hidden', '?'),
   \   <bang>0)
@@ -117,4 +118,29 @@ let g:project_use_nerdtree = 1
 
 call project#rc("/")
 Project "/afluenta-platform"
+" }}}
+" {{{ limelight
+" Color name (:help cterm-colors) or ANSI code
+let g:limelight_conceal_ctermfg = 'gray'
+let g:limelight_conceal_ctermfg = 240
+
+" Color name (:help gui-colors) or RGB color
+let g:limelight_conceal_guifg = 'DarkGray'
+let g:limelight_conceal_guifg = '#777777'
+
+" Default: 0.5
+let g:limelight_default_coefficient = 0.7
+
+" Number of preceding/following paragraphs to include (default: 0)
+let g:limelight_paragraph_span = 1
+
+" Beginning/end of paragraph
+"   When there's no empty line between the paragraphs
+"   and each paragraph starts with indentation
+let g:limelight_bop = '^\s'
+let g:limelight_eop = '\ze\n^\s'
+
+" Highlighting priority (default: 10)
+"   Set it to -1 not to overrule hlsearch
+let g:limelight_priority = -1
 " }}}

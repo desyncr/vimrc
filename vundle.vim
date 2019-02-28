@@ -82,7 +82,11 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'amiorin/vim-project'
 
 Plugin 'itchyny/lightline.vim'
+Plugin 'junegunn/limelight.vim'
+
+"Plugin 'MattesGroeger/vim-bookmarks'
+" Does not integrates well with LeaderF
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
-filetype plugin indent on    " required
+
