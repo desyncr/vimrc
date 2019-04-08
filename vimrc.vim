@@ -12,9 +12,6 @@ set nocompatible
 " enable plugin support
 filetype plugin on
 
-" highlight search matches
-set hls
-
 " ex command tab complition mode
 " zsh-like
 set wildmenu wildmode=full
@@ -40,6 +37,7 @@ set showmatch           " highlight matching [{()}]
 
 set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
+set ignorecase
 set scrolloff=3         " Minumum lines to keep above and below cursor
 
 " Display extra whitespace

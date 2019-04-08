@@ -84,6 +84,8 @@ Plugin 'amiorin/vim-project'
 Plugin 'itchyny/lightline.vim'
 Plugin 'junegunn/limelight.vim'
 
+Plugin 'takac/vim-hardtime'
+
 "Plugin 'MattesGroeger/vim-bookmarks'
 " Does not integrates well with LeaderF
 
