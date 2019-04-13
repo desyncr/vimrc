@@ -1,6 +1,8 @@
 source ~/.vim/vundle.vim
 
-colorscheme desert
+set background=dark
+colorscheme mysticaltutor
+set termguicolors
 syntax enable
 
 " leader is comma
@@ -29,7 +31,7 @@ set number              " show line numbers
 set numberwidth=5
 "set relativenumber
 
-"set showcmd             " show command in bottom bar
+"set showcmd            " show command in bottom bar
 set cursorline          " highlight current line
 filetype indent on      " load filetype-specific indent files
 
@@ -38,7 +40,7 @@ set showmatch           " highlight matching [{()}]
 set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
 set ignorecase
-set scrolloff=3         " Minumum lines to keep above and below cursor
+set scrolloff=10        " Minimum lines to keep above and below cursor
 
 " Display extra whitespace
 set list listchars=tab:»·,trail:·,nbsp:·
@@ -108,3 +110,4 @@ set laststatus=2
 
 source ~/.vim/imported.vim
 source ~/.vim/mappings.vim
+source ~/.vim/commands.vim
