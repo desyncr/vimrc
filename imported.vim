@@ -197,3 +197,7 @@ call vimfiler#custom#profile('default', 'context', {
 " {{{ phpcd
 "let g:phpcd_autoload_path = '/'
 " }}}
+" {{{ Magit
+let g:magit_default_fold_level = 0
+let g:magit_show_magit_mapping = '<leader>VS'
+" }}}
