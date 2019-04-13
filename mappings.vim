@@ -95,7 +95,6 @@ let g:which_key_map['b'] = {
 " Mode:                 <leader>+m+{w,z,g,s,n,N} {{{
 let g:which_key_map['m'] = {
     \ 'name' : '+mode'      ,
-    \ 'w'    : [':Goyo'     , 'Write mode (toggle)'         ],
     \ 'z'    : [':ZoomWin'  , 'Zoom window (toggle)'        ],
     \ 'g'    : [':GitGutterToggle', 'Toggle gutter'         ],
     \ 's'    : [':Startify' , 'Start up page'               ],
@@ -115,7 +114,8 @@ let g:which_key_map['v'] = {
     \ 'b'    : [':Gblame'   , 'Blame'                       ],
     \ 'l'    : [':GV!'      , 'Log'                         ],
     \ 'L'    : [':GV'       , 'History'                     ],
-    \ 'd'    : [':Gdiff'    , 'Diff'                        ]
+    \ 'd'    : [':Gdiff'    , 'Diff'                        ],
+    \ 'S'    : [':Magit'    , 'Console'                     ]
     \ }
 " }}}
 " Run: <leader>+r+{a,s,t} {{{
