@@ -8,14 +8,9 @@ nnoremap <tab> <C-W><C-W>
 nmap <leader>V :vnew<CR>
 nmap <leader>H :new<CR>
 
-" Show nerdTree
-nnoremap <leader>n :NERDTreeToggle<CR>
-
 " Remove highlight
-nnoremap qq :nohl<CR>:NERDTreeClose<CR>
-
-" Remap quit
-"nnoremap q :close<CR>
+nnoremap qq :nohl<CR>
+nnoremap Q :nohl<CR>
 
 " Remaps leader keys
 nnoremap ; :
@@ -47,13 +42,13 @@ let g:which_key_map['c'] = {
 " }}}
 " Projects:           <leader>+p+{s,w,m,f,n,N} {{{
 let g:which_key_map['p'] = {
-    \ 'name' : '+projects'    ,
-    \ 's'    : [':Rg '            , 'Search content'         ],
-    \ 'w'    : [':Ag <C-R><C-W><CR>' , 'Search word'        ],
-    \ 'm'    : [':LeaderfMru'    , 'Recent files'           ],
-    \ 'f'    : [':LeaderfFile'   , 'Fuzzy find'             ],
-    \ 'n'    : [':NERDTreeFind'  , 'NERDTree'               ],
-    \ 'N'    : [':NERDTreeToggle', 'NERDTreeToggle'         ]
+    \ 'name' : '+projects'              ,
+    \ 's'    : [':Rg '                  , 'Search content'  ],
+    \ 'w'    : [':Ag <C-R><C-W><CR>'    , 'Search word'     ],
+    \ 'm'    : [':LeaderfMru'           , 'Recent files'    ],
+    \ 'f'    : [':LeaderfFile'          , 'Fuzzy find'      ],
+    \ 'n'    : [':VimFilerBufferDir'    , 'VimFiler'        ],
+    \ 'N'    : [':VimFilerSplit'        ,  'NERDTreeToggle' ]
     \ }
 " }}}
 " Splits:             <leader>+s+{n,v,c,h,j,k,l,=,_,|} {{{
