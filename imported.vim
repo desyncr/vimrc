@@ -199,5 +199,5 @@ call vimfiler#custom#profile('default', 'context', {
 " }}}
 " {{{ Magit
 let g:magit_default_fold_level = 0
-let g:magit_show_magit_mapping = '<leader>VS'
+let g:magit_show_magit_mapping = '<leader>vS'
 " }}}
