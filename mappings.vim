@@ -16,7 +16,8 @@ nnoremap Q :nohl<CR>
 nnoremap ; :
 
 " Show MRU
-nnoremap <CR> :LeaderfMru<CR>
+nnoremap <CR> :LeaderfMruCwd<CR>
+nnoremap F :VimFiler<CR>
 
 " C+W + {H,J,K,L} - move split
 " C+W + [num] {<,>} resize split
@@ -44,11 +45,11 @@ let g:which_key_map['c'] = {
 let g:which_key_map['p'] = {
     \ 'name' : '+projects'              ,
     \ 's'    : [':Rg '                  , 'Search content'  ],
-    \ 'w'    : [':Ag <C-R><C-W><CR>'    , 'Search word'     ],
-    \ 'm'    : [':LeaderfMru'           , 'Recent files'    ],
-    \ 'f'    : [':LeaderfFile'          , 'Fuzzy find'      ],
-    \ 'n'    : [':VimFilerBufferDir'    , 'VimFiler'        ],
-    \ 'N'    : [':VimFilerSplit'        ,  'NERDTreeToggle' ]
+    \ 'w'    : [':Rg <C-R><C-W><CR>'    , 'Search word'     ],
+    \ 't'    : [':LeaderfTagCword'      , 'Search tags'     ],
+    \ 'm'    : [':LeaderfMruCwd'        , 'Recent files'    ],
+    \ 'f'    : [':LeaderfFile'          , 'Search files'    ],
+    \ 'n'    : [':VimFilerBufferDir'    , 'Explore'         ]
     \ }
 " }}}
 " Splits:             <leader>+s+{n,v,c,h,j,k,l,=,_,|} {{{
@@ -115,7 +116,8 @@ let g:which_key_map['v'] = {
     \ 'l'    : [':GV!'      , 'Log'                         ],
     \ 'L'    : [':GV'       , 'History'                     ],
     \ 'd'    : [':Gdiff'    , 'Diff'                        ],
-    \ 'S'    : [':Magit'    , 'Console'                     ]
+    \ 'S'    : [':Magit'    , 'Console'                     ],
+    \ 'T'    : [':Tig'      , 'Explore log'                 ]
     \ }
 " }}}
 " Run: <leader>+r+{a,s,t} {{{
@@ -135,6 +137,7 @@ let g:which_key_map.n = 'which_key_ignore'
 call which_key#register("<space>", "g:which_key_map")
 nnoremap <silent> <leader> :<c-u>WhichKey "<space>"<CR>
 vnoremap <silent> <leader> :<c-u>WhichKeyVisual "<space>"<CR>
-nnoremap <silent> <leader>pw :Ag <C-R><C-W><CR>
+"nnoremap <leader>pw :Ag <C-R><C-W><CR>
+nnoremap <leader>pw :Rg <C-R><C-W><CR>
 " }}}
 
