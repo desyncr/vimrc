@@ -49,7 +49,8 @@ let g:which_key_map['p'] = {
     \ 't'    : [':LeaderfTagCword'      , 'Search tags'     ],
     \ 'm'    : [':LeaderfMruCwd'        , 'Recent files'    ],
     \ 'f'    : [':LeaderfFile'          , 'Search files'    ],
-    \ 'n'    : [':VimFilerBufferDir'    , 'Explore'         ]
+    \ 'n'    : [':VimFilerBufferDir'    , 'Explore'         ],
+    \ 'S'    : [':Startify'             , 'Startify'        ]
     \ }
 " }}}
 " Splits:             <leader>+s+{n,v,c,h,j,k,l,=,_,|} {{{

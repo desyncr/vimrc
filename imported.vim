@@ -48,15 +48,15 @@ let g:gitgutter_map_keys = 0
 " }}}
 " {{{ Startify
 function! s:list_commits()
-  let git = 'git -C /afluenta-platform'
+  let git = 'git -C ' . getcwd()
   let commits = systemlist(git .' log --oneline | head -n10')
   let git = 'G'. git[1:]
   return map(commits, '{"line": matchstr(v:val, "\\s\\zs.*"), "cmd": "'. git .' show ". matchstr(v:val, "^\\x\\+") }')
 endfunction
 
 let g:startify_lists = [
-      \ { 'header': ['   MRU'],            'type': 'files' },
       \ { 'header': ['   MRU '. getcwd()], 'type': 'dir' },
+      \ { 'header': ['   MRU'],            'type': 'files' },
       \ { 'header': ['   Sessions'],       'type': 'sessions' },
       \ { 'header': ['   Commits'],        'type': function('s:list_commits') },
       \ ]
