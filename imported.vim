@@ -60,19 +60,17 @@ let g:startify_lists = [
       \ { 'header': ['   Sessions'],       'type': 'sessions' },
       \ { 'header': ['   Commits'],        'type': function('s:list_commits') },
       \ ]
-"let g:startify_custom_header = ["Hello"]
+let g:startify_custom_header = [
+            \ '         _/_/        _/_/  _/                                  _/               ',
+            \ '      _/    _/    _/      _/  _/    _/    _/_/    _/_/_/    _/_/_/_/    _/_/_/  ',
+            \ '     _/_/_/_/  _/_/_/_/  _/  _/    _/  _/_/_/_/  _/    _/    _/      _/    _/   ',
+            \ '    _/    _/    _/      _/  _/    _/  _/        _/    _/    _/      _/    _/    ',
+            \ '   _/    _/    _/      _/    _/_/_/    _/_/_/  _/    _/      _/_/    _/_/_/     ',
+            \ '    ']
 
+let g:startify_change_to_vcs_root = 1
 autocmd VimEnter * let t:startify_new_tab = 1
-"autocmd VimEnter *
-"       \ if !exists('t:goyo_master') |
-"       \   Goyo |
-"       \   Startify |
-"       \ endif
-"autocmd BufLeave *
-"       \ if exists('t:goyo_master') |
-"       \   Goyo! |
-"       \ endif
-" }}}
+
 " {{{ Vim fugitive
 let g:fugitive_git_executable = 'git --no-pager '
 " }}}
@@ -103,7 +101,7 @@ command! -bang -nargs=* Rg
 nnoremap <silent> <Leader>b* :Rg <C-R><C-W><CR>
 " }}}
 " {{{ Tags
-" ctags -R --fields=+aimlS --languages=php --exclude=vendor --exclude=node_modules --exclude=afluenta_libs --PHP-kinds=+cdfint-av --exclude="\.git" --tag-relative=yes --exclude="*test.php"
+" ctags -R --fields=+aimlS --languages=php --exclude=vendor --exclude=node_modules --PHP-kinds=+cdfintav --exclude="\.git" --tag-relative=yes --exclude="*test.php"
 au BufWritePost *.php silent! !eval '[ -f "ctags" ] && ctags' &
 function! FollowTag()
   if !exists("w:tagbrowse")
@@ -194,10 +192,25 @@ call vimfiler#custom#profile('default', 'context', {
 
 " }}}
 
-" {{{ phpcd
-"let g:phpcd_autoload_path = '/'
-" }}}
 " {{{ Magit
 let g:magit_default_fold_level = 0
 let g:magit_show_magit_mapping = '<leader>vS'
+" }}}
+" {{{ vim-project
+set rtp+=~/.vim/bundle/vim-project/
+let g:project_enable_welcome = 0
+let g:project_use_nerdtree = 0
+call project#rc()
+Project '~/Projects/afluenta-platform', 'Afluenta'
+Project '~/Personal/vimrc', 'Vim'
+" }}}
+" {{{ php cs fixer
+let g:php_cs_fixer_rules = "@PSR2"          " options: --rules (default:@PSR2)
+let g:php_cs_fixer_cache = "/tmp/.php_cs.cache" " options: --cache-file
+"let g:php_cs_fixer_config_file = '.php_cs' " options: --config
+
+let g:php_cs_fixer_php_path = "php"               " Path to PHP
+let g:php_cs_fixer_enable_default_mapping = 0     " Enable the mapping by default (<leader>pcd)
+let g:php_cs_fixer_dry_run = 0                    " Call command with dry-run option
+let g:php_cs_fixer_verbose = 0                    " Return the output of command if 1, else an inline information.
 " }}}
