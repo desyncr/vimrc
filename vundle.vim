@@ -8,26 +8,34 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-"Plugin 'scrooloose/nerdtree'
+" {{{ essentials
+" startup screen with mru, projects etc
+Plugin 'mhinz/vim-startify'
+" all around mru, files, buffers
+Plugin 'Yggdroot/LeaderF'
+" spacemacs-like keybinding menu
+Plugin 'liuchengxu/vim-which-key'
+" Per project dir settings
+Plugin 'amiorin/vim-project'
 
-" used for Ag command
-Plugin 'junegunn/fzf.vim'
-Plugin 'junegunn/fzf'
-
-"Plugin 'vim-airline/vim-airline'
-"Plugin 'vim-airline/vim-airline-themes'
+" file browser
+Plugin 'Shougo/vimfiler.vim'
+"Plugin 't9md/vim-choosewin'
+Plugin 'Shougo/unite.vim'
+" }}}
 
 " {{{ git
 Plugin 'tpope/vim-fugitive'
 Plugin 'junegunn/gv.vim'
 Plugin 'jreybert/vimagit'
+Plugin 'airblade/vim-gitgutter'
+
+" brew install tig
+Plugin 'iberianpig/tig-explorer.vim'
 " }}}
 
 " tags bar
 Plugin 'majutsushi/tagbar'
-
-" all around mru, files, buffers
-Plugin 'Yggdroot/LeaderF'
 
 " zen mode
 "Plugin 'junegunn/goyo.vim'
@@ -38,11 +46,7 @@ Plugin 'w0rp/ale'
 " finally multiple cursors for vim
 Plugin 'terryma/vim-multiple-cursors'
 
-" spacemacs-like keybinding menu
-Plugin 'liuchengxu/vim-which-key'
-
 "Plugin 'wincent/ferret'
-Plugin 'airblade/vim-gitgutter'
 
 "Plugin 'vim-scripts/ZoomWin'
 Plugin 'regedarek/ZoomWin'
@@ -53,23 +57,23 @@ Plugin 'regedarek/ZoomWin'
 
 "Plugin 'scrooloose/nerdcommenter'
 
-Plugin 'mhinz/vim-startify'
-
 Plugin 'skywind3000/asyncrun.vim'
+Plugin 'itchyny/lightline.vim'
 
 " {{{ PHP
-Plugin 'arnaud-lb/vim-php-namespace'
 Plugin 'stephpy/vim-php-cs-fixer'
-Plugin 'shawncplus/phpcomplete.vim'
-Plugin 'StanAngeloff/php.vim'
+Plugin '2072/PHP-Indenting-for-VIm'
+"Plugin 'rayburgemeestre/phpfolding.vim'
+"Plugin 'shawncplus/phpcomplete.vim'
+"Plugin 'StanAngeloff/php.vim'
 "Plugin 'lvht/phpfold.vim'
-Plugin 'rafi/vim-phpspec'
+"Plugin 'rafi/vim-phpspec'
 Plugin 'php-vim/phpcd.vim'
 " }}}
 
 " {{{ Typescript
-Plugin 'leafgarland/typescript-vim.git'
-Plugin 'Quramy/tsuquyomi'
+"Plugin 'leafgarland/typescript-vim.git'
+"Plugin 'Quramy/tsuquyomi'
 " }}}
 
 " C-v ++ / paste: "<n, ..>p
@@ -81,14 +85,11 @@ Plugin 'Quramy/tsuquyomi'
 "Plugin 'Valloric/YouCompleteMe'
 
 " :MundoShow - vim undo visualization
-Plugin 'simnalamburt/vim-mundo'
+"Plugin 'simnalamburt/vim-mundo'
 
 "Plugin 'tpope/vim-surround'
 "Plugin 'jiangmiao/auto-pairs'
 
-"Plugin 'amiorin/vim-project'
-
-Plugin 'itchyny/lightline.vim'
 "Plugin 'junegunn/limelight.vim'
 
 "Plugin 'takac/vim-hardtime'
@@ -98,11 +99,15 @@ Plugin 'itchyny/lightline.vim'
 "Plugin 'Shougo/defx.nvim'
 "Plugin 'roxma/nvim-yarp'
 "Plugin 'roxma/vim-hug-neovim-rpc'
-Plugin 'Shougo/vimfiler.vim'
-"Plugin 't9md/vim-choosewin'
-Plugin 'Shougo/unite.vim'
+
+" used for Ag command
+Plugin 'junegunn/fzf.vim'
+Plugin 'junegunn/fzf'
+
 
 " Themes
+"Plugin 'vim-airline/vim-airline'
+"Plugin 'vim-airline/vim-airline-themes'
 "Plugin 'axvr/photon.vim'
 "Plugin 'liuchengxu/space-vim-theme'
 "Plugin 'nightsense/cosmic_latte'
