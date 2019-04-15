@@ -15,6 +15,9 @@ nnoremap Q :nohl<CR>
 " Remaps leader keys
 nnoremap ; :
 
+" Fast write
+nnoremap W :w<CR>
+
 " Show MRU
 nnoremap <CR> :LeaderfMruCwd<CR>
 nnoremap F :VimFiler<CR>
@@ -49,6 +52,7 @@ let g:which_key_map['p'] = {
     \ 't'    : [':LeaderfTagCword'      , 'Search tags'     ],
     \ 'm'    : [':LeaderfMruCwd'        , 'Recent files'    ],
     \ 'f'    : [':LeaderfFile'          , 'Search files'    ],
+    \ 'F'    : [':LeaderfFileFullScreen', 'Search files full'],
     \ 'n'    : [':VimFilerBufferDir'    , 'Explore'         ],
     \ 'S'    : [':Startify'             , 'Startify'        ]
     \ }
