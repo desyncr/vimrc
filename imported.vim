@@ -40,7 +40,7 @@ let g:Lf_RootMarkers = ['.git']
 " }}}
 " {{{ YCM
 let g:ycm_key_detailed_diagnostics = '<C>byd'
-let g:ycm_auto_trigger = 0
+let g:ycm_auto_trigger = 1
 " }}}
 " {{{ GitGutter
 " Messes up with my mappings

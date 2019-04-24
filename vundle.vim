@@ -113,8 +113,16 @@ Plugin 'junegunn/fzf'
 "Plugin 'nightsense/cosmic_latte'
 "Plugin 'kmszk/skyhawk'
 "Plugin 'Nequo/vim-allomancer'
+
+" Color schemes
 Plugin 'caksoylar/vim-mysticaltutor'
+
+"Plugin 'Valloric/YouCompleteMe'
+Plugin 'ervandew/supertab'
+
+Plugin 'jiangmiao/auto-pairs'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
+filetype plugin indent on    " required
 
