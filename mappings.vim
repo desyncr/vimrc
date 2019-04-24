@@ -20,7 +20,7 @@ nnoremap W :w<CR>
 
 " Show MRU
 nnoremap <CR> :LeaderfMruCwd<CR>
-nnoremap F :VimFiler<CR>
+nnoremap F :VimFilerBufferDir<CR>
 
 " C+W + {H,J,K,L} - move split
 " C+W + [num] {<,>} resize split
@@ -88,14 +88,22 @@ let g:which_key_map['b'] = {
     \ 'l'    : [':bnext'         , 'Next buffer'            ],
     \ 'h'    : [':bprev'         , 'Previous buffer'        ],
     \ 'd'    : [':bdel'          , 'Delete buffer'          ],
-    \ 't'    : [':LeaderfBufTag' , 'Search tags'            ],
-    \ 'f'    : [':LeaderfFunction', 'Search functions'      ],
-    \ 'T'    : [':Tagbar'        , 'Tagbar'                 ],
     \ 'q'    : [':copen'         , 'Open quickfix'          ],
     \ 'Q'    : [':cclose'        , 'Close quickfix'         ],
     \ 'n'    : [':call multiple_cursors#new("n", 1)' , 'Close quickfix'],
     \ 'w'    : [':w'             , 'Write buffer'           ],
-    \ 'u'    : [':MundoToggle'   , 'Show undo buffer'       ]
+    \ }
+" }}}
+" Code:             <leader> {{{
+let g:which_key_map['C'] = {
+    \ 'name' : '+code'      ,
+    \ 't'    : [':LeaderfBufTag' , 'Search tags'            ],
+    \ 'f'    : [':LeaderfFunction', 'Search functions'      ],
+    \ 'T'    : [':Tagbar'        , 'Tagbar'                 ],
+    \ 'w'    : [':w'             , 'Write'                  ],
+    \ 'u'    : [':MundoToggle'   , 'Show undo'              ],
+    \ 'd'    : [':call PhpDoc()' , 'Generate docblock'      ],
+    \ 'h'    : ['<S-k>', 'Manual entry'      ]
     \ }
 " }}}
 " Mode:                 <leader>+m+{w,z,g,s,n,N} {{{
@@ -111,18 +119,17 @@ let g:which_key_map['m'] = {
 " VCS: <leader>+v+{a,P,f,p,s,c,b,l,d} {{{
 let g:which_key_map['v'] = {
     \ 'name' : '+vcs'       ,
-    \ 'a'    : [':Gwrite'   , 'Add'                         ],
     \ 'P'    : [':Gpush'    , 'Push'                        ],
     \ 'f'    : [':Gfetch'   , 'Fetch'                       ],
     \ 'p'    : [':Gpull'    , 'Pull'                        ],
     \ 's'    : [':Gstatus'  , 'Status'                      ],
-    \ 'c'    : [':Gcommit'  , 'Commit'                      ],
     \ 'b'    : [':Gblame'   , 'Blame'                       ],
-    \ 'l'    : [':GV!'      , 'Log'                         ],
-    \ 'L'    : [':GV'       , 'History'                     ],
-    \ 'd'    : [':Gdiff'    , 'Diff'                        ],
-    \ 'S'    : [':Magit'    , 'Console'                     ],
-    \ 'T'    : [':Tig'      , 'Explore log'                 ]
+    \ 'l'    : [':GV!'      , 'Log current file'            ],
+    \ 'L'    : [':GV'       , 'History (Fugitive)'          ],
+    \ 'd'    : [':Gdiff'    , 'Side-by-side diff'           ],
+    \ 'S'    : [':Magit'    , 'Git console'                 ],
+    \ 'T'    : [':Tig'      , 'Explore log (tig)'           ],
+    \ 'm'    : [':Mergerial', 'Explore branches'            ]
     \ }
 " }}}
 " Run: <leader>+r+{a,s,t} {{{
