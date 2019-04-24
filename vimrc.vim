@@ -1,9 +1,9 @@
 source ~/.vim/vundle.vim
 
+syntax enable
+"set termguicolors
 set background=dark
 colorscheme mysticaltutor
-set termguicolors
-syntax enable
 
 " leader is comma
 let mapleader=" "
@@ -78,7 +78,7 @@ noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 
-set omnifunc=syntaxcomplete#Complete
+"set omnifunc=syntaxcomplete#Complete
 
 set lazyredraw
 set switchbuf+=usetab
@@ -111,3 +111,5 @@ set laststatus=2
 source ~/.vim/imported.vim
 source ~/.vim/mappings.vim
 source ~/.vim/commands.vim
+
+set completeopt=longest,menuone
