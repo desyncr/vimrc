@@ -70,6 +70,7 @@ let g:startify_custom_header = [
 
 let g:startify_change_to_vcs_root = 1
 autocmd VimEnter * let t:startify_new_tab = 1
+" }}}
 
 " {{{ Vim fugitive
 let g:fugitive_git_executable = 'git --no-pager '
@@ -117,7 +118,7 @@ set tags=/afluenta-platform/tags
 " }}}
 " {{{ ALE
 let g:ale_set_signs = 0
-let g:ale_completion_enabled = 1
+"let g:ale_completion_enabled = 1
 " }}}
 
 " {{{ limelight
@@ -176,8 +177,8 @@ endf
 
 call vimfiler#custom#profile('default', 'context', {
       \ 'explorer' : 1,
-      \ 'winwidth' : 40,
-      \ 'winminwidth' : 40,
+      \ 'winwidth' : 45,
+      \ 'winminwidth' : 45,
       \ 'toggle' : 1,
       \ 'auto_expand': 1,
       \ 'direction' : g:vimfiler_direction,
@@ -213,4 +214,9 @@ let g:php_cs_fixer_php_path = "php"               " Path to PHP
 let g:php_cs_fixer_enable_default_mapping = 0     " Enable the mapping by default (<leader>pcd)
 let g:php_cs_fixer_dry_run = 0                    " Call command with dry-run option
 let g:php_cs_fixer_verbose = 0                    " Return the output of command if 1, else an inline information.
+" }}}
+" {{{ PIV
+let g:pdv_cfg_foldmarker = 0
+let g:DisableAutoPHPFolding = 1
+let g:php_folding = 0
 " }}}
