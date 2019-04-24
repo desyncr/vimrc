@@ -29,6 +29,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'junegunn/gv.vim'
 Plugin 'jreybert/vimagit'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'idanarye/vim-merginal'
 
 " brew install tig
 Plugin 'iberianpig/tig-explorer.vim'
@@ -63,12 +64,18 @@ Plugin 'itchyny/lightline.vim'
 " {{{ PHP
 Plugin 'stephpy/vim-php-cs-fixer'
 Plugin '2072/PHP-Indenting-for-VIm'
+Plugin 'phpactor/phpactor'
+Plugin 'spf13/PIV'
+Plugin 'alvan/vim-php-manual'
 "Plugin 'rayburgemeestre/phpfolding.vim'
 "Plugin 'shawncplus/phpcomplete.vim'
 "Plugin 'StanAngeloff/php.vim'
 "Plugin 'lvht/phpfold.vim'
 "Plugin 'rafi/vim-phpspec'
-Plugin 'php-vim/phpcd.vim'
+"Plugin 'php-vim/phpcd.vim'
+"Bundle 'Shougo/vimproc'
+"Bundle 'Shougo/unite.vim'
+"Bundle 'm2mdas/phpcomplete-extended'
 " }}}
 
 " {{{ Typescript
@@ -82,13 +89,11 @@ Plugin 'php-vim/phpcd.vim'
 "Plugin 'terryma/vim-smooth-scroll'
 "Plugin 'inside/vim-search-pulse'
 
-"Plugin 'Valloric/YouCompleteMe'
 
 " :MundoShow - vim undo visualization
 "Plugin 'simnalamburt/vim-mundo'
 
 "Plugin 'tpope/vim-surround'
-"Plugin 'jiangmiao/auto-pairs'
 
 "Plugin 'junegunn/limelight.vim'
 
@@ -103,7 +108,6 @@ Plugin 'php-vim/phpcd.vim'
 " used for Ag command
 Plugin 'junegunn/fzf.vim'
 Plugin 'junegunn/fzf'
-
 
 " Themes
 "Plugin 'vim-airline/vim-airline'
