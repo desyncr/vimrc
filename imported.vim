@@ -218,5 +218,5 @@ let g:php_cs_fixer_verbose = 0                    " Return the output of command
 " {{{ PIV
 let g:pdv_cfg_foldmarker = 0
 let g:DisableAutoPHPFolding = 1
-let g:php_folding = 0
+let g:php_folding = 1
 " }}}

@@ -91,7 +91,7 @@ Plugin 'alvan/vim-php-manual'
 
 
 " :MundoShow - vim undo visualization
-"Plugin 'simnalamburt/vim-mundo'
+Plugin 'simnalamburt/vim-mundo'
 
 "Plugin 'tpope/vim-surround'
 

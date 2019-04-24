@@ -113,3 +113,4 @@ source ~/.vim/mappings.vim
 source ~/.vim/commands.vim
 
 set completeopt=longest,menuone
+set foldlevel=3

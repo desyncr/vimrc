@@ -34,13 +34,12 @@ let g:which_key_map =  {}
 " Configs:            <leader>+c+{r,e,m,v,i,I,u,M} {{{
 let g:which_key_map['c'] = {
     \ 'name' : '+config',
-    \ 'r'    : [':so ~/.vimrc'    , 'Reload .vimrc'         ],
-    \ 'e'    : [':e ~/.vimrc'     , 'Edit .vimrc'           ],
-    \ 'm'    : [':e ~/.vim/mappings.vim' , 'Edit mappings (keybindings)'],
-    \ 'v'    : [':e ~/.vim/vundle.vim'   , 'Edit plugins'   ],
-    \ 'i'    : [':e ~/.vim/imported.vim' , 'Edit imported'  ],
+    \ 'r'    : [':so ~/.vimrc'    , 'Reload configuration'  ],
+    \ 'e'    : [':e ~/.vimrc'     , 'Edit configuration'    ],
+    \ 'm'    : [':e ~/.vim/mappings.vim' , 'Edit mappings'  ],
+    \ 'v'    : [':e ~/.vim/vundle.vim'   , 'Edit vundles'   ],
     \ 'I'    : [':PluginInstall'  , 'Install plugins'       ],
-    \ 'u'    : [':PluginUpdate'   , 'Update plugins'        ],
+    \ 'U'    : [':PluginUpdate'   , 'Update plugins'        ],
     \ 'M'    : [':Maps'           , 'Show mappings'         ],
     \ }
 " }}}
@@ -123,13 +122,12 @@ let g:which_key_map['v'] = {
     \ 'f'    : [':Gfetch'   , 'Fetch'                       ],
     \ 'p'    : [':Gpull'    , 'Pull'                        ],
     \ 's'    : [':Gstatus'  , 'Status'                      ],
-    \ 'b'    : [':Gblame'   , 'Blame'                       ],
     \ 'l'    : [':GV!'      , 'Log current file'            ],
     \ 'L'    : [':GV'       , 'History (Fugitive)'          ],
     \ 'd'    : [':Gdiff'    , 'Side-by-side diff'           ],
     \ 'S'    : [':Magit'    , 'Git console'                 ],
     \ 'T'    : [':Tig'      , 'Explore log (tig)'           ],
-    \ 'm'    : [':Mergerial', 'Explore branches'            ]
+    \ 'm'    : [':Merginal' , 'Explore branches'            ]
     \ }
 " }}}
 " Run: <leader>+r+{a,s,t} {{{
