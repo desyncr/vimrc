@@ -109,12 +109,12 @@ let g:which_key_map['C'] = {
 " }}}
 " Mode:                 <leader>+m+{w,z,g,s,n,N} {{{
 let g:which_key_map['m'] = {
-    \ 'name' : '+mode'      ,
-    \ 'z'    : [':ZoomWin'  , 'Zoom window (toggle)'        ],
-    \ 'g'    : [':GitGutterToggle', 'Toggle gutter'         ],
-    \ 's'    : [':Startify' , 'Start up page'               ],
-    \ 'n'    : [':set number!' , 'Toggle numbers'           ],
-    \ 'N'    : [':set relativenumber!' , 'Toggle rel numbers']
+    \ 'name' : '+mode'              ,
+    \ 'z'    : [':ZoomWin'          , 'Zoom window (toggle)' ],
+    \ 'g'    : [':GitGutterToggle'  , 'Toggle gutter'        ],
+    \ 's'    : [':Startify'         , 'Start up page'        ],
+    \ 'n'    : [':set number!'      , 'Toggle numbers'       ],
+    \ 'N'    : [':set relativenumber!', 'Toggle rel numbers' ]
     \ }
 " }}}
 " VCS: <leader>+v+{a,P,f,p,s,c,b,l,d} {{{
