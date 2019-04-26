@@ -1,1 +1,1 @@
-command! Q :qa!
+"command! Q :qa!
