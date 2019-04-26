@@ -25,3 +25,7 @@ Nevertheless, I think you should consider revising the need to create such a sho
 <c-w>z : Close preview window.
 <c-w>v : Split current window in two, keeping the cursor position.
 So, you can use <c-w>}if you want to quickly check the tag declaration, followed by <c-w>z to close it. But if you want to navigate, then you can simply use <c-w>v to create a split followed by the standard <c-] to navigate in the tags. When you're done with it, you can simply close the window with <c-w>c.
+
+# moving inside a class
+
+]m, [m - next method, previous method
