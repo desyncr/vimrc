@@ -98,11 +98,13 @@ let g:which_key_map['C'] = {
     \ 'name' : '+code'      ,
     \ 't'    : [':LeaderfBufTag' , 'Search tags'            ],
     \ 'f'    : [':LeaderfFunction', 'Search functions'      ],
-    \ 'T'    : [':Tagbar'        , 'Tagbar'                 ],
-    \ 'w'    : [':w'             , 'Write'                  ],
+    \ 'T'    : [':Tagbar'        , 'Show Tagbar'            ],
+    \ 'w'    : [':w'             , 'Save buffer'            ],
     \ 'u'    : [':MundoToggle'   , 'Show undo'              ],
     \ 'd'    : [':call PhpDoc()' , 'Generate docblock'      ],
-    \ 'h'    : ['<S-k>', 'Manual entry'      ]
+    \ 'h'    : ['<S-k>'          , 'Manual entry'           ],
+    \ 'm'    : [':Marks'         , 'Bookmarks'              ],
+    \ 'n'    : [':BookmarkShowAll', 'Show bookmarks'        ]
     \ }
 " }}}
 " Mode:                 <leader>+m+{w,z,g,s,n,N} {{{
@@ -127,7 +129,9 @@ let g:which_key_map['v'] = {
     \ 'd'    : [':Gdiff'    , 'Side-by-side diff'           ],
     \ 'S'    : [':Magit'    , 'Git console'                 ],
     \ 'T'    : [':Tig'      , 'Explore log (tig)'           ],
-    \ 'm'    : [':Merginal' , 'Explore branches'            ]
+    \ 'm'    : [':Merginal' , 'Explore branches'            ],
+    \ 'c'    : [':Commits'  , 'Commit history'              ],
+    \ 'e'    : [':BCommits' , 'Commits file'                ]
     \ }
 " }}}
 " Run: <leader>+r+{a,s,t} {{{
