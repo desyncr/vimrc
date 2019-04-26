@@ -127,7 +127,7 @@ let g:which_key_map['v'] = {
     \ 'l'    : [':GV!'      , 'Log current file'            ],
     \ 'L'    : [':GV'       , 'History (Fugitive)'          ],
     \ 'd'    : [':Gdiff'    , 'Side-by-side diff'           ],
-    \ 'S'    : [':Magit'    , 'Git console'                 ],
+    \ 'S'    : [':tabnew +MagitOnly', 'Git console'         ],
     \ 'T'    : [':Tig'      , 'Explore log (tig)'           ],
     \ 'm'    : [':Merginal' , 'Explore branches'            ],
     \ 'c'    : [':Commits'  , 'Commit history'              ],
@@ -137,9 +137,10 @@ let g:which_key_map['v'] = {
 " Run: <leader>+r+{a,s,t} {{{
 let g:which_key_map['r'] = {
     \ 'name' : '+run'       ,
-    \ 'a'    : ['echo :AsyncRun '   , 'Async run'           ],
+    \ 'a'    : [':echo AsyncRun'    , 'Async run'           ],
     \ 's'    : [':AsyncStop'        , 'Stop async run'      ],
     \ 't'    : [':terminal bash'    , 'Open a terminal'     ],
+    \ 'o'    : [':copen'            , 'Open quickfix'       ]
     \ }
 " }}}
 
@@ -154,4 +155,3 @@ vnoremap <silent> <leader> :<c-u>WhichKeyVisual "<space>"<CR>
 "nnoremap <leader>pw :Ag <C-R><C-W><CR>
 nnoremap <leader>pw :Rg <C-R><C-W><CR>
 " }}}
-
