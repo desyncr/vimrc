@@ -103,8 +103,8 @@ let g:which_key_map['C'] = {
     \ 'u'    : [':MundoToggle'   , 'Show undo'              ],
     \ 'd'    : [':call PhpDoc()' , 'Generate docblock'      ],
     \ 'h'    : ['<S-k>'          , 'Manual entry'           ],
-    \ 'm'    : [':Marks'         , 'Bookmarks'              ],
-    \ 'n'    : [':BookmarkShowAll', 'Show bookmarks'        ]
+    \ 'n'    : [':Marks'         , 'Bookmarks'              ],
+    \ 'm'    : [':BookmarkShowAll', 'Show bookmarks'        ]
     \ }
 " }}}
 " Mode:                 <leader>+m+{w,z,g,s,n,N} {{{
@@ -114,15 +114,17 @@ let g:which_key_map['m'] = {
     \ 'g'    : [':GitGutterToggle'  , 'Toggle gutter'        ],
     \ 's'    : [':Startify'         , 'Start up page'        ],
     \ 'n'    : [':set number!'      , 'Toggle numbers'       ],
-    \ 'N'    : [':set relativenumber!', 'Toggle rel numbers' ]
+    \ 'N'    : [':set relativenumber!', 'Toggle rel numbers' ],
+    \ 'c'    : [':call ToggleColorColumn()', 'Toggle color column' ],
+    \ 'S'    : [':syntax on'        , 'Toggle syntax'        ]
     \ }
 " }}}
 " VCS: <leader>+v+{a,P,f,p,s,c,b,l,d} {{{
 let g:which_key_map['v'] = {
     \ 'name' : '+vcs'       ,
-    \ 'P'    : [':Gpush'    , 'Push'                        ],
-    \ 'f'    : [':Gfetch'   , 'Fetch'                       ],
-    \ 'p'    : [':Gpull'    , 'Pull'                        ],
+    \ 'P'    : [':AsyncRun git push', 'Push'                ],
+    \ 'f'    : [':AsyncRun git fetch', 'Fetch'              ],
+    \ 'p'    : [':AsyncRun git pull', 'Pull'                ],
     \ 's'    : [':Gstatus'  , 'Status'                      ],
     \ 'l'    : [':GV!'      , 'Log current file'            ],
     \ 'L'    : [':GV'       , 'History (Fugitive)'          ],
@@ -140,7 +142,9 @@ let g:which_key_map['r'] = {
     \ 'a'    : [':echo AsyncRun'    , 'Async run'           ],
     \ 's'    : [':AsyncStop'        , 'Stop async run'      ],
     \ 't'    : [':terminal bash'    , 'Open a terminal'     ],
-    \ 'o'    : [':copen'            , 'Open quickfix'       ]
+    \ 'o'    : [':copen'            , 'Open quickfix'       ],
+    \ 'r'    : [':AsyncRun make test', 'Run tests'          ],
+    \ 'e'    : [':AsyncRun make exec CMD="php /afluenta-platform/%"', 'Run current script' ]
     \ }
 " }}}
 
