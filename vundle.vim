@@ -20,11 +20,12 @@ Plugin 'VundleVim/Vundle.vim'
     " file browser
     Plugin 'Shougo/vimfiler.vim'
     Plugin 'Shougo/unite.vim'
+    Plugin 'vim-scripts/ReplaceWithRegister' " griw
 " }}}
 
 " {{{ Git
     Plugin 'tpope/vim-fugitive'
-    Plugin 'junegunn/gv.vim'
+    Plugin 'juegunn/gv.vim'
     Plugin 'jreybert/vimagit'
     Plugin 'airblade/vim-gitgutter'
     Plugin 'idanarye/vim-merginal'
@@ -35,7 +36,7 @@ Plugin 'VundleVim/Vundle.vim'
 " {{{ Other
     " tags bar
     Plugin 'majutsushi/tagbar'
-    Plugin 'ervandew/supertab'
+    "Plugin 'ervandew/supertab'
 
     " Async linting
     Plugin 'w0rp/ale'
@@ -53,6 +54,11 @@ Plugin 'VundleVim/Vundle.vim'
     " used for Ag, Commits, Rg command
     Plugin 'junegunn/fzf.vim'
     Plugin 'junegunn/fzf'
+
+    Plugin 'henrik/vim-indexed-search'
+    Plugin 'scrooloose/nerdcommenter'
+
+    " Plugin 'Alok/notational-fzf-vim'
 " }}}
 
 " {{{ PHP
@@ -73,7 +79,7 @@ Plugin 'VundleVim/Vundle.vim'
     Plugin 'caksoylar/vim-mysticaltutor'
 " }}}
 
-Plugin 'jiangmiao/auto-pairs'
+"Plugin 'jiangmiao/auto-pairs'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
