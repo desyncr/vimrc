@@ -23,8 +23,8 @@ let g:fzf_layout = { 'down': '~20%' }
 hi ColorColumn ctermbg=8 |
 hi Search         term=none ctermfg=black ctermbg=12 guifg=wheat guibg=peru |
 hi Visual         term=none cterm=none ctermbg=grey ctermfg=black guifg=khaki guibg=olivedrab |
-
 " }}}
+
 " {{{ Leaderf
 let g:Lf_ShortcutF = '<C-P>'
 let g:Lf_ShortcutB = '<C-K>'
@@ -36,16 +36,18 @@ let g:Lf_WildIgnore = {
         \}
 let g:Lf_WorkingDirectoryMode='a'
 let g:Lf_RootMarkers = ['.git']
-
 " }}}
+
 " {{{ YCM
 let g:ycm_key_detailed_diagnostics = '<C>byd'
 let g:ycm_auto_trigger = 1
 " }}}
+
 " {{{ GitGutter
 " Messes up with my mappings
 let g:gitgutter_map_keys = 0
 " }}}
+
 " {{{ Startify
 function! s:list_commits()
   let git = 'git -C ' . getcwd()
@@ -75,23 +77,16 @@ autocmd VimEnter * let t:startify_new_tab = 1
 " {{{ Vim fugitive
 let g:fugitive_git_executable = 'git --no-pager '
 " }}}
-" {{{ vmath
-vmap <expr>  ++  VMATH_YankAndAnalyse()
-nmap         ++  vip++
-" }}}
+
 " {{{ php fixer
 let g:php_cs_fixer_enable_default_mapping = 0
 " }}}
+
 " {{{ fzf commands
 "command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, '--word-regexp', <bang>0)
 "command! -bang -nargs=* Rg call fzf#vim#grep("rg ".shellescape(<q-args>), 1, {'options': ''}, <bang>0)
 " }}}
-" {{{ vim-smooth-scroll
-"noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 0, 2)<CR>
-"noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 0, 2)<CR>
-"noremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 0, 4)<CR>
-"noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 0, 4)<CR>
-" }}}
+
 " {{{ Rg
 command! -bang -nargs=* Rg
   \ call fzf#vim#grep(
@@ -101,6 +96,7 @@ command! -bang -nargs=* Rg
   \   <bang>0)
 nnoremap <silent> <Leader>b* :Rg <C-R><C-W><CR>
 " }}}
+
 " {{{ Tags
 " ctags -R --fields=+aimlS --languages=php --exclude=vendor --exclude=node_modules --PHP-kinds=+cdfintav --exclude="\.git" --tag-relative=yes --exclude="*test.php"
 au BufWritePost *.php silent! !eval '[ -f "ctags" ] && ctags' &
@@ -116,6 +112,7 @@ nmap <C-g> :call FollowTag()<CR>
 
 set tags=/afluenta-platform/tags
 " }}}
+
 " {{{ ALE
 let g:ale_set_signs = 0
 "let g:ale_completion_enabled = 1
@@ -146,9 +143,7 @@ let g:limelight_eop = '\ze\n^\s'
 "   Set it to -1 not to overrule hlsearch
 let g:limelight_priority = -1
 " }}}
-" {{{ vim hardmode
-let g:hardtime_default_on = 1
-" }}}
+
 " {{{ vimfiler
 let g:vimfiler_direction = 'rightbelow'
 let g:vimfiler_ignore_pattern = [
@@ -174,7 +169,6 @@ function! s:vimfilerinit()
   nnoremap <silent><buffer> sv  :<C-u>call <SID>vimfiler_split()<CR>
 endf
 
-
 call vimfiler#custom#profile('default', 'context', {
       \ 'explorer' : 1,
       \ 'winwidth' : 45,
@@ -197,6 +191,7 @@ call vimfiler#custom#profile('default', 'context', {
 let g:magit_default_fold_level = 0
 let g:magit_show_magit_mapping = '<leader>vS'
 " }}}
+
 " {{{ vim-project
 set rtp+=~/.vim/bundle/vim-project/
 let g:project_enable_welcome = 0
@@ -205,18 +200,42 @@ call project#rc()
 Project '~/Projects/afluenta-platform', 'Afluenta'
 Project '~/Personal/vimrc', 'Vim'
 " }}}
+
 " {{{ php cs fixer
 let g:php_cs_fixer_rules = "@PSR2"          " options: --rules (default:@PSR2)
 let g:php_cs_fixer_cache = "/tmp/.php_cs.cache" " options: --cache-file
 "let g:php_cs_fixer_config_file = '.php_cs' " options: --config
-
 let g:php_cs_fixer_php_path = "php"               " Path to PHP
 let g:php_cs_fixer_enable_default_mapping = 0     " Enable the mapping by default (<leader>pcd)
 let g:php_cs_fixer_dry_run = 0                    " Call command with dry-run option
 let g:php_cs_fixer_verbose = 0                    " Return the output of command if 1, else an inline information.
 " }}}
+
 " {{{ PIV
 let g:pdv_cfg_foldmarker = 0
 let g:DisableAutoPHPFolding = 1
 let g:php_folding = 1
+" }}}
+
+" {{{ vim-bookmarks
+let g:bookmark_no_default_key_mappings = 1
+nmap m :BookmarkToggle<CR>
+let g:bookmark_save_per_working_dir = 1
+let g:bookmark_auto_save = 1
+
+call unite#custom#profile('source/vim_bookmarks', 'context', {
+    \   'winheight': 40,
+    \   'direction': 'botright',
+    \   'start_insert': 0,
+    \   'keep_focus': 1,
+    \   'no_quit': 1,
+    \ })
+" }}}
+
+" {{{ async run
+let g:asyncrun_open = 8
+" }}}
+" {{{ nerdcommenter
+let g:NERDCreateDefaultMappings = 0
+map <leader>bc <Plug>NERDCommenterToggle
 " }}}
