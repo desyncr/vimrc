@@ -57,20 +57,19 @@ set splitright
 set splitbelow
 set hidden               " Allow buffer switching without saving
 
-set backup               " backup files
-set writebackup          " only in case you don't want a backup file while editing
-set swapfile             " swap files
+"set backup               " backup files
+"set writebackup          " only in case you don't want a backup file while editing
+"set swapfile             " swap files
 
 set undofile             " Persistent undo
-set undolevels=10000     " Maximum number of changes that can be undone
-set undoreload=10000     " Maximum number lines to save for undo on a buffer reload
+set undolevels=10        " Maximum number of changes that can be undone
+set undoreload=10        " Maximum number lines to save for undo on a buffer reload
 
 " https://medium.com/@Aenon/vim-swap-backup-undo-git-2bf353caa02f
 set backupdir=~/.vim/.backup
 set directory=~/.vim/.swap
 set undodir=~/.vim/.undo
 
-set redrawtime=1000000
 
 " Disable arrow keys
 noremap <Up> <Nop>
