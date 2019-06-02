@@ -1,3 +1,4 @@
+SHELL	    = bash
 PREFIX      ?= ~/.vim
 VIMRC       ?= ~/.vimrc
 VUNDLE_PATH ?= ${PREFIX}/bundle/Vundle.vim
@@ -13,4 +14,6 @@ uninstall:
 	rm ${PREFIX}
 	rm -r ${PWD}/bundle
 docs:
-	cat mappings.vim|head -n 10|tail -n 9|sed  's/" //' | sed 's/ {{{{//'|sed 's/}}}//'
+	cat mappings.vim | head -n 10 | tail -n 9 | sed  's/" //' | sed 's/ {{{{//'|sed 's/}}}//'
+build:
+	cat vundle.vim | sed -n "s/^[ P].*lugin .*\/\(.*\)\'/\1/p" | xargs mkdir -p

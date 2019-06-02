@@ -107,7 +107,7 @@ endif
 " for lightline 
 set laststatus=2
 
-source ~/.vim/imported.vim
+source ~/.vim/init.vim
 source ~/.vim/mappings.vim
 source ~/.vim/commands.vim
 

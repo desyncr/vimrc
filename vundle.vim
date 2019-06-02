@@ -20,7 +20,8 @@ Plugin 'VundleVim/Vundle.vim'
     " file browser
     Plugin 'Shougo/vimfiler.vim'
     Plugin 'Shougo/unite.vim'
-    Plugin 'vim-scripts/ReplaceWithRegister' " griw
+    " griw
+    Plugin 'vim-scripts/ReplaceWithRegister'
 " }}}
 
 " {{{ Git

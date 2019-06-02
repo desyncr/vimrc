@@ -14,3 +14,16 @@ function! ToggleColorColumn()
     endif
 
 endfunction
+
+
+function! Runner(runner)
+    exec ":AsyncRun " . eval("g:runner_command_" . a:runner)
+endfunction
+
+let g:runner_command_test   = "make test"
+let g:runner_command_run    = "make run"
+let g:runner_command_build  = "make build"
+
+command! RunnerTest     :call Runner("test")
+command! RunnerRun      :call Runner("run")
+command! RunnerBuild    :call Runner("build")
