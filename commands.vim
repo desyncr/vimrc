@@ -27,3 +27,6 @@ let g:runner_command_build  = "make build"
 command! RunnerTest     :call Runner("test")
 command! RunnerRun      :call Runner("run")
 command! RunnerBuild    :call Runner("build")
+
+command! S :syntax on
+command! So :syntax off
