@@ -68,6 +68,7 @@ Plugin 'VundleVim/Vundle.vim'
     Plugin 'phpactor/phpactor'
     Plugin 'spf13/PIV'
     Plugin 'alvan/vim-php-manual'
+    Plugin 'StanAngeloff/php.vim'
 " }}}
 
 " {{{ Typescript
