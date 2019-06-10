@@ -57,9 +57,9 @@ set splitright
 set splitbelow
 set hidden               " Allow buffer switching without saving
 
-"set backup               " backup files
-"set writebackup          " only in case you don't want a backup file while editing
-"set swapfile             " swap files
+set backup               " backup files
+set writebackup          " only in case you don't want a backup file while editing
+set swapfile             " swap files
 
 set undofile             " Persistent undo
 set undolevels=10        " Maximum number of changes that can be undone
