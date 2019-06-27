@@ -72,9 +72,9 @@ Plugin 'VundleVim/Vundle.vim'
 " }}}
 
 " {{{ Typescript
-    "Plugin 'leafgarland/typescript-vim.git'
-    "Plugin 'Quramy/tsuquyomi'
-    " }}}
+    Plugin 'leafgarland/typescript-vim.git'
+    Plugin 'Quramy/tsuquyomi'
+" }}}
 
 " {{{ Themes and colors
     Plugin 'itchyny/lightline.vim'
