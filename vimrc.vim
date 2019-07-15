@@ -40,7 +40,7 @@ set showmatch           " highlight matching [{()}]
 set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
 set ignorecase
-set scrolloff=10        " Minimum lines to keep above and below cursor
+set scrolloff=5        " Minimum lines to keep above and below cursor
 
 " Display extra whitespace
 set list listchars=tab:»·,trail:·,nbsp:·

@@ -15,3 +15,4 @@ source ~/.vim/vim-startify/init.vim
 source ~/.vim/vim-which-key/init.vim
 source ~/.vim/vimagit/init.vim
 source ~/.vim/vimfiler.vim/init.vim
+source ~/.vim/vim-easy-align/init.vim

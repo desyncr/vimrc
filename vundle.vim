@@ -1,8 +1,8 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+set      nocompatible " be iMproved, required
+filetype off          " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
+set  rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " let Vundle manage Vundle, required
@@ -21,7 +21,7 @@ Plugin 'VundleVim/Vundle.vim'
     Plugin 'Shougo/vimfiler.vim'
     Plugin 'Shougo/unite.vim'
     " griw
-    Plugin 'vim-scripts/ReplaceWithRegister'
+    "Plugin 'vim-scripts/ReplaceWithRegister'
 " }}}
 
 " {{{ Git
@@ -31,7 +31,7 @@ Plugin 'VundleVim/Vundle.vim'
     Plugin 'airblade/vim-gitgutter'
     Plugin 'idanarye/vim-merginal'
     " brew install tig
-    Plugin 'iberianpig/tig-explorer.vim'
+    Plugin  'iberianpig/tig-explorer.vim'
 " }}}
 
 " {{{ Other
@@ -57,17 +57,22 @@ Plugin 'VundleVim/Vundle.vim'
     Plugin 'junegunn/fzf'
 
     Plugin 'henrik/vim-indexed-search'
-    Plugin 'scrooloose/nerdcommenter'
+    " Plugin 'scrooloose/nerdcommenter'
 
     " Plugin 'Alok/notational-fzf-vim'
+    Plugin 'itchyny/vim-cursorword'
+    Plugin 'tpope/vim-commentary'
+    Plugin 'nathanaelkane/vim-indent-guides'
+    Plugin 'haya14busa/incsearch.vim'
+    Plugin 'junegunn/vim-easy-align'
 " }}}
 
 " {{{ PHP
-    Plugin 'stephpy/vim-php-cs-fixer'
+    "Plugin 'stephpy/vim-php-cs-fixer'
     Plugin '2072/PHP-Indenting-for-VIm'
     Plugin 'phpactor/phpactor'
-    Plugin 'spf13/PIV'
-    Plugin 'alvan/vim-php-manual'
+    "Plugin 'spf13/PIV'
+    "Plugin 'alvan/vim-php-manual'
     Plugin 'StanAngeloff/php.vim'
 " }}}
 
@@ -84,6 +89,6 @@ Plugin 'VundleVim/Vundle.vim'
 "Plugin 'jiangmiao/auto-pairs'
 
 " All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
+call vundle#end() " required
+filetype plugin   indent on    " required
 
