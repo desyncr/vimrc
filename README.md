@@ -14,6 +14,7 @@ My vimrc settings and custom configurations.
 Set up custom configuration (this repo):
 
     git clone https://github.com/desyncr/vimrc.git $HOME/.vim
+    mkdir -p $HOME/.vim/.backup $HOME/.vim/.swap $HOME/.vim/.undo
     ln -s $HOME/.vim/vimrc.vim ~/.vimrc
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
     vim +PluginInstall +qall

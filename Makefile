@@ -9,7 +9,8 @@ install:
 	ln -s ${PWD} ${PREFIX}
 	ln -s ${CONFIG} ${VIMRC}
 	git clone ${VUNDLE_GIT} ${VUNDLE_PATH}
+	mkdir -p ${PREFIX}/.backup ${PREFIX}/.swap ${PREFIX}/.undo
 uninstall:
 	rm ${VIMRC}
 	rm ${PREFIX}
-	rm -r ${PWD}/bundle
+	rm -r ${PREFIX}/bundle
