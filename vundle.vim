@@ -26,7 +26,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 " {{{ Git
     Plugin 'tpope/vim-fugitive'
-    Plugin 'juegunn/gv.vim'
+    Plugin 'junegunn/gv.vim'
     Plugin 'jreybert/vimagit'
     Plugin 'airblade/vim-gitgutter'
     Plugin 'idanarye/vim-merginal'
