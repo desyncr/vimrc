@@ -1,7 +1,7 @@
 source ~/.vim/vundle.vim
 
 syntax enable
-"set termguicolors
+set termguicolors
 set background=dark
 colorscheme mysticaltutor
 
@@ -114,3 +114,5 @@ source ~/.vim/commands.vim
 set completeopt=longest,menuone
 set foldlevel=3
 
+" Fucking fuck
+set noerrorbells visualbell t_vb=
