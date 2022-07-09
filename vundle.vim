@@ -12,11 +12,11 @@ Plugin 'VundleVim/Vundle.vim'
     " startup screen with mru, projects etc
     Plugin 'mhinz/vim-startify'
     " all around mru, files, buffers
-    Plugin 'Yggdroot/LeaderF'
+    "Plugin 'Yggdroot/LeaderF'
     " spacemacs-like keybinding menu
     Plugin 'liuchengxu/vim-which-key'
     " Per project dir settings
-    Plugin 'amiorin/vim-project'
+    "Plugin 'amiorin/vim-project'
     " file browser
     Plugin 'Shougo/vimfiler.vim'
     Plugin 'Shougo/unite.vim'
@@ -25,7 +25,7 @@ Plugin 'VundleVim/Vundle.vim'
 " }}}
 
 " {{{ Git
-    Plugin 'tpope/vim-fugitive'
+    "Plugin 'tpope/vim-fugitive'
     Plugin 'junegunn/gv.vim'
     "Plugin 'jreybert/vimagit'
     Plugin 'airblade/vim-gitgutter'
@@ -36,46 +36,55 @@ Plugin 'VundleVim/Vundle.vim'
 
 " {{{ Other
     " tags bar
-    Plugin 'majutsushi/tagbar'
+    "Plugin 'majutsushi/tagbar'
     "Plugin 'ervandew/supertab'
 
     " Async linting
-    Plugin 'w0rp/ale'
+    "Plugin 'w0rp/ale'
     " finally multiple cursors for vim
-    Plugin 'terryma/vim-multiple-cursors'
-    Plugin 'regedarek/ZoomWin'
+    "Plugin 'terryma/vim-multiple-cursors'
+    Plugin 'mg979/vim-visual-multi'
+    "Plugin 'regedarek/ZoomWin'
 
-    Plugin 'skywind3000/asyncrun.vim'
+    "Plugin 'skywind3000/asyncrun.vim'
 
     " advanced bookmarking
-    Plugin 'MattesGroeger/vim-bookmarks'
+    "Plugin 'MattesGroeger/vim-bookmarks'
     " :MundoShow - vim undo visualization
-    Plugin 'simnalamburt/vim-mundo'
+    "Plugin 'simnalamburt/vim-mundo'
 
     " used for Ag, Commits, Rg command
     Plugin 'junegunn/fzf.vim'
     Plugin 'junegunn/fzf'
 
-    Plugin 'henrik/vim-indexed-search'
+    "Plugin 'henrik/vim-indexed-search'
     " Plugin 'scrooloose/nerdcommenter'
 
     " Plugin 'Alok/notational-fzf-vim'
+    " underline words under cursor
     Plugin 'itchyny/vim-cursorword'
+    " gcc - comment out a line / uncomment
     Plugin 'tpope/vim-commentary'
-    Plugin 'nathanaelkane/vim-indent-guides'
+    "Plugin 'nathanaelkane/vim-indent-guides'
+    " Highlights search while typing
     Plugin 'haya14busa/incsearch.vim'
-    Plugin 'junegunn/vim-easy-align'
+    "Plugin 'junegunn/vim-easy-align'
+    " Interactive finder, :Clap
+    Plugin 'liuchengxu/vim-clap'
 " }}}
 
 " {{{ Themes and colors
     Plugin 'itchyny/lightline.vim'
     Plugin 'caksoylar/vim-mysticaltutor'
+    " Smooth scrolling, C-D, C-U
     Plugin 'psliwka/vim-smoothie'
 " }}}
 
 " {{{ Writing
     Plugin 'preservim/vim-wordy'
+    " :Goyo
     Plugin 'junegunn/goyo.vim'
+    " :Pencil
     Plugin 'preservim/vim-pencil'
     Plugin 'dpelle/vim-LanguageTool'
     Plugin 'preservim/vim-markdown'
