@@ -23,8 +23,8 @@ let g:which_key_map['p'] = {
     \ 't'    : [':LeaderfTagCword'      , 'Search tags'     ],
     \ 'm'    : [':LeaderfMruCwd'        , 'Recent files'    ],
     \ 'f'    : [':LeaderfFile'          , 'Search files'    ],
-    \ 'F'    : [':LeaderfFileFullScreen', 'Search files full'],
-    \ 'n'    : [':VimFilerBufferDir'    , 'Explore'         ],
+    \ 'F'    : [':Clap mrufiles'        , 'Clap MRU files'  ],
+    \ 'n'    : [':Clap filer'           , 'Clap MRU filer'  ],
     \ 'S'    : [':Startify'             , 'Startify'        ]
     \ }
 " }}}

@@ -19,7 +19,11 @@ nnoremap ; :
 nnoremap W :w<CR>
 
 " Show MRU
-nnoremap <CR> :LeaderfMruCwd<CR>
+"nnoremap <CR> :LeaderfMruCwd<CR>
+"nnoremap <CR> :LeaderfMruCwd<CR>
+nnoremap <CR> :Clap mrufiles<CR>
+nnoremap <CR><CR> :Clap files<CR>
+nnoremap ff :Clap filer<CR>
 nnoremap F :VimFilerBufferDir<CR>
 
 " C+W + {H,J,K,L} - move split

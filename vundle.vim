@@ -12,7 +12,7 @@ Plugin 'VundleVim/Vundle.vim'
     " startup screen with mru, projects etc
     Plugin 'mhinz/vim-startify'
     " all around mru, files, buffers
-    "Plugin 'Yggdroot/LeaderF'
+    Plugin 'Yggdroot/LeaderF'
     " spacemacs-like keybinding menu
     Plugin 'liuchengxu/vim-which-key'
     " Per project dir settings
@@ -71,6 +71,7 @@ Plugin 'VundleVim/Vundle.vim'
     "Plugin 'junegunn/vim-easy-align'
     " Interactive finder, :Clap
     Plugin 'liuchengxu/vim-clap'
+    Plugin 'markwu/vim-mrufiles'
 " }}}
 
 " {{{ Themes and colors
