@@ -11,6 +11,7 @@ source ~/.vim/vim-fugitive/init.vim
 source ~/.vim/vim-gitgutter/init.vim
 source ~/.vim/vim-LanguageTool/init.vim
 source ~/.vim/vim-markdown/init.vim
+source ~/.vim/vim-pencil/init.vim
 source ~/.vim/vim-project/init.vim
 source ~/.vim/vim-smoothie/init.vim
 source ~/.vim/vim-startify/init.vim
