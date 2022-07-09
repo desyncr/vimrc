@@ -118,5 +118,8 @@ set foldlevel=3
 set noerrorbells visualbell t_vb=
 
 set regexpengine=0
-set spell spelllang=en_gb
-let g:markdown_syntax_conceal = 1
+
+set spelllang=en_gb
+autocmd FileType markdown setlocal spell
+autocmd FileType gitcommit setlocal spell
+
