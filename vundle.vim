@@ -27,11 +27,11 @@ Plugin 'VundleVim/Vundle.vim'
 " {{{ Git
     Plugin 'tpope/vim-fugitive'
     Plugin 'junegunn/gv.vim'
-    Plugin 'jreybert/vimagit'
+    "Plugin 'jreybert/vimagit'
     Plugin 'airblade/vim-gitgutter'
-    Plugin 'idanarye/vim-merginal'
+    "Plugin 'idanarye/vim-merginal'
     " brew install tig
-    Plugin  'iberianpig/tig-explorer.vim'
+    "Plugin  'iberianpig/tig-explorer.vim'
 " }}}
 
 " {{{ Other
@@ -67,26 +67,19 @@ Plugin 'VundleVim/Vundle.vim'
     Plugin 'junegunn/vim-easy-align'
 " }}}
 
-" {{{ PHP
-    "Plugin 'stephpy/vim-php-cs-fixer'
-    Plugin '2072/PHP-Indenting-for-VIm'
-    Plugin 'phpactor/phpactor'
-    "Plugin 'spf13/PIV'
-    "Plugin 'alvan/vim-php-manual'
-    Plugin 'StanAngeloff/php.vim'
-" }}}
-
-" {{{ Typescript
-    Plugin 'leafgarland/typescript-vim.git'
-    Plugin 'Quramy/tsuquyomi'
-" }}}
-
 " {{{ Themes and colors
     Plugin 'itchyny/lightline.vim'
     Plugin 'caksoylar/vim-mysticaltutor'
+    Plugin 'psliwka/vim-smoothie'
 " }}}
 
-"Plugin 'jiangmiao/auto-pairs'
+" {{{ Writing
+    Plugin 'preservim/vim-wordy'
+    Plugin 'junegunn/goyo.vim'
+    Plugin 'preservim/vim-pencil'
+    Plugin 'dpelle/vim-LanguageTool'
+    Plugin 'preservim/vim-markdown'
+" }}}
 
 " All of your Plugins must be added before the following line
 call vundle#end() " required

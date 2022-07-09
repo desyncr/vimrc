@@ -83,7 +83,8 @@ let g:which_key_map['C'] = {
 let g:which_key_map['m'] = {
     \ 'name' : '+mode'              ,
     \ 'z'    : [':ZoomWin'          , 'Zoom window (toggle)' ],
-    \ 'g'    : [':GitGutterToggle'  , 'Toggle gutter'        ],
+    \ 'G'    : [':GitGutterToggle'  , 'Toggle gutter'        ],
+    \ 'g'    : [':Goyo'             , 'Toggle Goyo mode'     ],
     \ 's'    : [':Startify'         , 'Start up page'        ],
     \ 'n'    : [':set number!'      , 'Toggle numbers'       ],
     \ 'N'    : [':set relativenumber!', 'Toggle rel numbers' ],
