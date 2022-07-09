@@ -30,3 +30,14 @@ command! RunnerBuild    :call Runner("build")
 
 command! S :syntax on
 command! So :syntax off
+
+function! ShoppingList()
+  %s/\t/, /ge
+  silent! %g/, 0,/delete
+
+  %s/^, , , /---------/ge
+  %s/---------\n---------/---------/ge
+  %s/Total, , /Total /ge
+endfunction
+
+command! ShoppingList   :call ShoppingList()
