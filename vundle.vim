@@ -25,13 +25,13 @@ Plugin 'VundleVim/Vundle.vim'
 " }}}
 
 " {{{ Git
-    "Plugin 'tpope/vim-fugitive'
+    Plugin 'tpope/vim-fugitive'
     Plugin 'junegunn/gv.vim'
     "Plugin 'jreybert/vimagit'
     Plugin 'airblade/vim-gitgutter'
     "Plugin 'idanarye/vim-merginal'
     " brew install tig
-    "Plugin  'iberianpig/tig-explorer.vim'
+    Plugin  'iberianpig/tig-explorer.vim'
 " }}}
 
 " {{{ Other

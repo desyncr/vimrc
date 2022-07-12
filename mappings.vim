@@ -14,17 +14,27 @@ nnoremap Q :nohl<CR>
 
 " Remaps leader keys
 nnoremap ; :
+nnoremap <space><space> :
 
 " Fast write
 nnoremap W :w<CR>
+nnoremap <space>w :w<CR>
 
 " Show MRU
 "nnoremap <CR> :LeaderfMruCwd<CR>
 "nnoremap <CR> :LeaderfMruCwd<CR>
-nnoremap <CR> :Clap mrufiles<CR>
-nnoremap <CR><CR> :Clap files<CR>
-nnoremap ff :Clap filer<CR>
-nnoremap F :VimFilerBufferDir<CR>
+"
+"nnoremap <CR> :Clap mrufiles<CR>
+"nnoremap <CR><CR> :Clap files<CR>
+"
+"
+nnoremap <CR> :FzfMruFiles<CR>
+
+nnoremap ff :FZF<CR>
+nnoremap f :VimFilerBufferDir<CR>
+
+vnoremap < <gv
+vnoremap > >gv
 
 " C+W + {H,J,K,L} - move split
 " C+W + [num] {<,>} resize split

@@ -11,4 +11,5 @@ let g:Lf_WorkingDirectoryMode='a'
 let g:Lf_RootMarkers = ['.git']
 " }}}
 
-
+let g:Lf_ShowDevIcons=0
+let g:Lf_IgnoreCurrentBufferName=1
