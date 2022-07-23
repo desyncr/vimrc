@@ -42,8 +42,7 @@ Plugin 'VundleVim/Vundle.vim'
 
     " Async linting
     "Plugin 'w0rp/ale'
-    " finally multiple cursors for vim
-    "Plugin 'terryma/vim-multiple-cursors'
+    " multiple line section ctrl+N, quit with esc
     Plugin 'mg979/vim-visual-multi'
     "Plugin 'regedarek/ZoomWin'
 
