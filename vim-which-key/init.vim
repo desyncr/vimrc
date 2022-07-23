@@ -96,9 +96,9 @@ let g:which_key_map['m'] = {
 " VCS: <leader>+v+{a,P,f,p,s,c,b,l,d} {{{
 let g:which_key_map['v'] = {
     \ 'name' : '+vcs'       ,
-    \ 'P'    : [':Git push' , 'Push'                        ],
-    \ 'f'    : [':Git fetch', 'Fetch'                       ],
-    \ 'p'    : [':Git pull' , 'Pull'                        ],
+    \ 'P'    : [':AsyncRun git push' , 'Push'               ],
+    \ 'f'    : [':AsyncRun git fetch', 'Fetch'              ],
+    \ 'p'    : [':AsyncRun git pull' , 'Pull'               ],
     \ 's'    : [':vertical Git', 'Status'                   ],
     \ 'l'    : [':GV!'      , 'Log current file'            ],
     \ 'L'    : [':GV'       , 'History (Fugitive)'          ],
