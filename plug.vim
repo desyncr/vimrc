@@ -70,6 +70,9 @@ call plug#begin()
     " <space><space>f - find char, <space><space-w - jump to word
     " <space><space>gE - jump anywhere
     Plug 'easymotion/vim-easymotion'
+
+    " Cheatsheet
+    Plug 'lifepillar/vim-cheat40'
 " }}}
 
 " {{{ Themes and colors

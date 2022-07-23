@@ -7,11 +7,11 @@ function! s:list_commits()
 endfunction
 
 let g:startify_lists = [
-      \ { 'header': ['   MRU '. getcwd()], 'type': 'dir' },
       \ { 'header': ['   MRU'],            'type': 'files' },
-      \ { 'header': ['   Sessions'],       'type': 'sessions' },
-      \ { 'header': ['   Commits'],        'type': function('s:list_commits') },
+      \ { 'header': ['   MRU '. getcwd()], 'type': 'dir' },
+      \ { 'header': ['   Commands'],        'type': 'commands' },
       \ ]
+
 let g:startify_custom_header = [
             \ '________  ___________ ______________.___._______  ___________________  ',
             \ '\______ \ \_   _____//   _____/\__  |   |\      \ \_   ___ \______   \ ',

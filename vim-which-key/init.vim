@@ -7,13 +7,13 @@ let g:which_key_map =  {}
 " Configs:            <leader>+c+{r,e,m,v,i,I,u,M} {{{
 let g:which_key_map['c'] = {
     \ 'name' : '+config',
-    \ 'r'    : [':so ~/.vimrc'    , 'Reload configuration'  ],
-    \ 'e'    : [':e ~/.vimrc'     , 'Edit configuration'    ],
+    \ 'r'    : [':so ~/.vimrc'      , 'Reload configuration'],
+    \ 'e'    : [':e ~/.vimrc'       , 'Edit configuration'  ],
     \ 'm'    : [':e ~/.vim/mappings.vim' , 'Edit mappings'  ],
-    \ 'v'    : [':e ~/.vim/vundle.vim'   , 'Edit vundles'   ],
-    \ 'I'    : [':PluginInstall'  , 'Install plugins'       ],
-    \ 'U'    : [':PluginUpdate'   , 'Update plugins'        ],
-    \ 'M'    : [':Maps'           , 'Show mappings'         ],
+    \ 'v'    : [':e ~/.vim/plug.vim', 'Edit plugs'          ],
+    \ 'I'    : [':PlugInstall'      , 'Install plugins'     ],
+    \ 'U'    : [':PlugUpdate'       , 'Update plugins'      ],
+    \ 'M'    : [':Maps'             , 'Show mappings'       ],
     \ }
 " }}}
 " Projects:           <leader>+p+{s,w,m,f,n,N} {{{
