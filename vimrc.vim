@@ -122,4 +122,3 @@ set regexpengine=0
 set spelllang=en_gb
 autocmd FileType markdown setlocal spell
 autocmd FileType gitcommit setlocal spell
-

@@ -23,6 +23,6 @@ let g:startify_custom_header = [
 
 let g:startify_change_to_vcs_root = 1
 autocmd VimEnter * let t:startify_new_tab = 1
+autocmd User StartifyReady Goyo
+au BufLeave <buffer> Goyo!
 " }}}
-
-
