@@ -37,15 +37,15 @@ Some plugins worth mentioning:
 # Mappings
 
 ```
-- Buffers            <leader>+b
-- Code               <leader>+C
-- Config             <leader>+c
-- Mode               <leader>+m
-- Projects           <leader>+p
-- Run                <leader>+r
-- Splits             <leader>+s
-- Tabs               <leader>+t
-- VCS                <leader>+v
+Buffers            <leader>+b
+Code               <leader>+C
+Config             <leader>+c
+Mode               <leader>+m
+Projects           <leader>+p
+Run                <leader>+r
+Splits             <leader>+s
+Tabs               <leader>+t
+VCS                <leader>+v
 ```
 
 Use `<leader>` key to see mappings, default `<space>`.
