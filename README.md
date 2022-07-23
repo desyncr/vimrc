@@ -36,6 +36,7 @@ Some plugins worth mentioning:
 
 # Mappings
 
+```
 - Buffers            <leader>+b
 - Code               <leader>+C
 - Config             <leader>+c
@@ -45,6 +46,7 @@ Some plugins worth mentioning:
 - Splits             <leader>+s
 - Tabs               <leader>+t
 - VCS                <leader>+v
+```
 
 Use `<leader>` key to see mappings, default `<space>`.
 
