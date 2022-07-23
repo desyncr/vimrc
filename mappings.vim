@@ -37,4 +37,9 @@
     " C+W + {H,J,K,L} - move split
     " C+W + [num] {<,>} resize split
     " C+w+{=,_,|} - Equal proporsions, maximise vertically, horizontally
+
+    " vim-powered terminal in split window
+    map <Leader>T :term ++close<cr>
+    tmap <Leader>T <c-w>:term ++close<cr>
+
 " }}}

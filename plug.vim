@@ -72,7 +72,7 @@ call plug#begin()
     Plug 'easymotion/vim-easymotion'
 
     " Cheatsheet
-    Plug 'lifepillar/vim-cheat40'
+    Plug 'desyncr/vim-cheat40'
 " }}}
 
 " {{{ Themes and colors

@@ -11,6 +11,16 @@ Jump middle document        M          N
 Jump bottom document        L          N
 Page up, page down          {, }       N
 }}}
+Filer {{{
+Copy file                   c          N
+Move file                   m          N
+Delete file                 d          N
+Rename file                 r          N
+Make directory              K          N
+Crete new file              N          N
+Crete new file              N          N
+Toggle visible hidden files .          N
+}}}
 Splits {{{
 Move split                  CW+{HJKL} N
 Resize splits               CW+[num]{<,>} N
@@ -23,4 +33,5 @@ Multiple line section       CN         N
 Find anything               <leader>gE N
 Find char                   <leader>w  N
 Smooth scrolling            CD, CU     N
+Open terminal               <leader>T  N
 }}}
