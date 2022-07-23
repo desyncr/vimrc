@@ -14,8 +14,13 @@ call plug#begin()
     " file browser
     Plug 'Shougo/vimfiler.vim'
     Plug 'Shougo/unite.vim'
-    " griw
-    "Plug 'vim-scripts/ReplaceWithRegister'
+    " Interactive finder, :Clap
+    Plug 'liuchengxu/vim-clap'
+    Plug 'markwu/vim-mrufiles'
+
+    " used for Ag, Commits, Rg command
+    Plug 'junegunn/fzf.vim'
+    Plug 'junegunn/fzf'
 " }}}
 
 " {{{ Git
@@ -46,10 +51,6 @@ call plug#begin()
     " :MundoShow - vim undo visualization
     "Plug 'simnalamburt/vim-mundo'
 
-    " used for Ag, Commits, Rg command
-    Plug 'junegunn/fzf.vim'
-    Plug 'junegunn/fzf'
-
     "Plug 'henrik/vim-indexed-search'
     " Plug 'scrooloose/nerdcommenter'
 
@@ -62,10 +63,6 @@ call plug#begin()
     " Highlights search while typing
     Plug 'haya14busa/incsearch.vim'
     "Plug 'junegunn/vim-easy-align'
-    " Interactive finder, :Clap
-    Plug 'liuchengxu/vim-clap'
-    Plug 'markwu/vim-mrufiles'
-
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " <space><space>f - find char, <space><space-w - jump to word
     " <space><space>gE - jump anywhere
