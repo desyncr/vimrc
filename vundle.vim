@@ -1,3 +1,4 @@
+" vim: fdm=marker
 set      nocompatible " be iMproved, required
 filetype off          " required
 
@@ -8,7 +9,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-" {{{ essentials
+" {{{ Essentials
     " startup screen with mru, projects etc
     Plugin 'mhinz/vim-startify'
     " all around mru, files, buffers
@@ -27,7 +28,7 @@ Plugin 'VundleVim/Vundle.vim'
 " {{{ Git
     Plugin 'tpope/vim-fugitive'
     Plugin 'junegunn/gv.vim'
-    "Plugin 'jreybert/vimagit'
+    Plugin 'jreybert/vimagit'
     Plugin 'airblade/vim-gitgutter'
     "Plugin 'idanarye/vim-merginal'
     " brew install tig
@@ -74,6 +75,8 @@ Plugin 'VundleVim/Vundle.vim'
     Plugin 'markwu/vim-mrufiles'
 
     Plugin 'neoclide/coc.nvim'
+    " <space><space>f - find char, <space><space-w - jump to word
+    " <space><space>gE - jump anywhere
     Plugin 'easymotion/vim-easymotion'
 " }}}
 
@@ -85,12 +88,12 @@ Plugin 'VundleVim/Vundle.vim'
 " }}}
 
 " {{{ Writing
-    Plugin 'preservim/vim-wordy'
     " :Goyo
     Plugin 'junegunn/goyo.vim'
     " :Pencil
     Plugin 'preservim/vim-pencil'
     Plugin 'dpelle/vim-LanguageTool'
+    Plugin 'preservim/vim-wordy'
     "Plugin 'preservim/vim-markdown'
 " }}}
 
