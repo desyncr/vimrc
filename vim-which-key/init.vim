@@ -98,7 +98,7 @@ let g:which_key_map['v'] = {
     \ 'P'    : [':AsyncRun git push', 'Push'                ],
     \ 'f'    : [':AsyncRun git fetch', 'Fetch'              ],
     \ 'p'    : [':AsyncRun git pull', 'Pull'                ],
-    \ 's'    : [':Gstatus'  , 'Status'                      ],
+    \ 's'    : [':Git'      , 'Status'                      ],
     \ 'l'    : [':GV!'      , 'Log current file'            ],
     \ 'L'    : [':GV'       , 'History (Fugitive)'          ],
     \ 'd'    : [':Gdiff'    , 'Side-by-side diff'           ],

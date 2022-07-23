@@ -47,7 +47,7 @@ Plugin 'VundleVim/Vundle.vim'
     Plugin 'mg979/vim-visual-multi'
     "Plugin 'regedarek/ZoomWin'
 
-    "Plugin 'skywind3000/asyncrun.vim'
+    Plugin 'skywind3000/asyncrun.vim'
 
     " advanced bookmarking
     "Plugin 'MattesGroeger/vim-bookmarks'
