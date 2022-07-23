@@ -1,5 +1,6 @@
 source ~/.vim/ale/init.vim
 source ~/.vim/asyncrun.vim/init.vim
+source ~/.vim/coc.vim/init.vim
 source ~/.vim/fzf.vim/init.vim
 source ~/.vim/goyo/init.vim
 source ~/.vim/LeaderF/init.vim

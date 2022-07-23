@@ -84,7 +84,7 @@ set switchbuf+=usetab
 
 set lazyredraw " to avoid scrolling problems
 set regexpengine=1 " way faster syntax redraw
-set redrawtime=60
+set redrawtime=6000
 set synmaxcol=500
 "set ttyfast
 "set ttyscroll=5

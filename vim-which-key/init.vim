@@ -123,6 +123,7 @@ let g:which_key_map['r'] = {
 " }}}
 
 let g:which_key_map.V = 'which_key_ignore'
+let g:which_key_map.w = 'which_key_ignore'
 let g:which_key_map.H = 'which_key_ignore'
 let g:which_key_map.q = 'which_key_ignore'
 let g:which_key_map.n = 'which_key_ignore'

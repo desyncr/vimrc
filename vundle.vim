@@ -72,6 +72,9 @@ Plugin 'VundleVim/Vundle.vim'
     " Interactive finder, :Clap
     Plugin 'liuchengxu/vim-clap'
     Plugin 'markwu/vim-mrufiles'
+
+    Plugin 'neoclide/coc.nvim'
+    Plugin 'easymotion/vim-easymotion'
 " }}}
 
 " {{{ Themes and colors
@@ -88,7 +91,7 @@ Plugin 'VundleVim/Vundle.vim'
     " :Pencil
     Plugin 'preservim/vim-pencil'
     Plugin 'dpelle/vim-LanguageTool'
-    Plugin 'preservim/vim-markdown'
+    "Plugin 'preservim/vim-markdown'
 " }}}
 
 " All of your Plugins must be added before the following line

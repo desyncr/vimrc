@@ -1,3 +1,3 @@
 let g:goyo_width=120
-nnoremap g :Goyo<CR>
+nnoremap g :Goyo<CR>:Pencil<CR>
 

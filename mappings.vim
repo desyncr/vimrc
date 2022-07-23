@@ -11,6 +11,7 @@ nmap <leader>H :new<CR>
 " Remove highlight
 nnoremap qq :nohl<CR>
 nnoremap Q :nohl<CR>
+nnoremap <space>q :q<CR>
 
 " Remaps leader keys
 nnoremap ; :
@@ -30,8 +31,8 @@ nnoremap <space>w :w<CR>
 "
 nnoremap <CR> :FzfMruFiles<CR>
 
-nnoremap ff :FZF<CR>
-nnoremap f :VimFilerBufferDir<CR>
+nnoremap f :FZF<CR>
+nnoremap ff :VimFilerBufferDir<CR>
 
 vnoremap < <gv
 vnoremap > >gv
