@@ -37,4 +37,5 @@ Smooth scrolling            CD, CU     N
 Open terminal               <leader>T  N
 Move between terminal       CW+{HJKL}  N
 Close terminal              CD         N
+Reload current buffer       :e         N
 }}}
