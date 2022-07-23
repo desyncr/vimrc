@@ -1,3 +1,4 @@
+" vim: fdm=marker
 " WhichKey {{{
 "nnoremap <silent> <leader> :WhichKey '`'<CR>
 set timeoutlen=300
@@ -95,16 +96,15 @@ let g:which_key_map['m'] = {
 " VCS: <leader>+v+{a,P,f,p,s,c,b,l,d} {{{
 let g:which_key_map['v'] = {
     \ 'name' : '+vcs'       ,
-    \ 'P'    : [':AsyncRun git push', 'Push'                ],
-    \ 'f'    : [':AsyncRun git fetch', 'Fetch'              ],
-    \ 'p'    : [':AsyncRun git pull', 'Pull'                ],
-    \ 's'    : [':Git'      , 'Status'                      ],
+    \ 'P'    : [':Git push' , 'Push'                        ],
+    \ 'f'    : [':Git fetch', 'Fetch'                       ],
+    \ 'p'    : [':Git pull' , 'Pull'                        ],
+    \ 's'    : [':vertical Git', 'Status'                   ],
     \ 'l'    : [':GV!'      , 'Log current file'            ],
     \ 'L'    : [':GV'       , 'History (Fugitive)'          ],
-    \ 'd'    : [':Gdiff'    , 'Side-by-side diff'           ],
-    \ 'S'    : [':tabnew +MagitOnly', 'Git console'         ],
+    \ 'd'    : [':split +Gdiff', 'Side-by-side diff'        ],
+    \ 'S'    : [':tab +Git' , 'Git console'                 ],
     \ 'T'    : [':Tig'      , 'Explore log (tig)'           ],
-    \ 'm'    : [':Merginal' , 'Explore branches'            ],
     \ 'c'    : [':Commits'  , 'Commit history'              ],
     \ 'e'    : [':BCommits' , 'Commits file'                ]
     \ }

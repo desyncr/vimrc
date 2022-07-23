@@ -28,7 +28,7 @@ Plugin 'VundleVim/Vundle.vim'
 " {{{ Git
     Plugin 'tpope/vim-fugitive'
     Plugin 'junegunn/gv.vim'
-    Plugin 'jreybert/vimagit'
+    " Plugin 'jreybert/vimagit'
     Plugin 'airblade/vim-gitgutter'
     "Plugin 'idanarye/vim-merginal'
     " brew install tig
