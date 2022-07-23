@@ -3,6 +3,8 @@
 
 My vimrc settings and custom configurations.
 
+![Screenshot](https://github.com/desyncr/vimrc/blob/master/screenshot.png?raw=true)
+
 # Setup
 
 ```
