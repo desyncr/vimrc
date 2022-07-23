@@ -1,4 +1,6 @@
 bundle/*
+plugged
+autoload
 vimrc
 .netrwhist
 .backup

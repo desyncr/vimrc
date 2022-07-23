@@ -1,15 +1,14 @@
-source ~/.vim/vundle.vim
+source ~/.vim/plug.vim
 
-syntax enable
-set termguicolors
-set background=dark
+set     nocompatible " be iMproved, required
+syntax  enable
+set     termguicolors
+set     background=dark
 colorscheme mysticaltutor
 
 " leader is comma
 let mapleader=" "
 let g:mapleader=" "
-
-set nocompatible
 
 " enable plugin support
 filetype plugin on

@@ -1,16 +1,16 @@
-SHELL	    = bash
+SHELL       ?= bash
 PREFIX      ?= ~/.vim
 VIMRC       ?= ~/.vimrc
-VUNDLE_PATH ?= ${PREFIX}/bundle/Vundle.vim
 CONFIG      ?= ${PREFIX}/vimrc.vim
-VUNDLE_GIT  ?= https://github.com/VundleVim/Vundle.vim.git
+VIMPLUG_REPO  ?= https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 install:
 	ln -s ${PWD} ${PREFIX}
 	ln -s ${CONFIG} ${VIMRC}
-	git clone ${VUNDLE_GIT} ${VUNDLE_PATH}
 	mkdir -p ${PREFIX}/.backup ${PREFIX}/.swap ${PREFIX}/.undo
+	curl -fLo ~/.vim/autoload/plug.vim --create-dirs ${VIMPLUG_REPO}
+	vim +PlugInstall
+
 uninstall:
 	rm ${VIMRC}
 	rm ${PREFIX}
-	rm -r ${PREFIX}/bundle
